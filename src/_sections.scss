@@ -1,4 +1,47 @@
-.landing {
+/* Sections */
+/* Main Landing */
+section {
+    min-height: 90vh;
+}
+
+div.landing-upper {
     color: color('gray', '900');
     background-color: color('yellow', 'base');
+    display: flex;
+    height: 50vh;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div.landing-middle {
+    background-color: color('yellow', 'base');
+    height: 30vh;
+    padding-left: spacer('1');
+    padding-right: spacer('2');
+    display: grid;
+    grid-template-areas: 'cell-left cell-right';
+}
+
+div.landing-middle div.cell-left,
+div.landing-middle div.cell-right {
+    display: flex;
+}
+
+div.landing-middle div.cell-left {
+    grid-area: cell-left;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+div.landing-middle div.cell-right {
+    grid-area: cell-right;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.landing-lower {
+    height: 10vh;
+    border-radius: 0 0 50% 50%;
+    background-color: color('yellow', '900');
+    box-shadow: $box-shadow;
 }
