@@ -5,6 +5,12 @@ section {
 
 /* Home Page */
 /* Landing */
+img.logo {
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+}
+
 div.landing-upper {
     color: color('gray', '900');
     background-color: color('yellow', 'base');

@@ -46,6 +46,12 @@ section {
 
 /* Home Page */
 /* Landing */
+img.logo {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+}
+
 div.landing-upper {
   color: #212121;
   background-color: #ffeb3b;
