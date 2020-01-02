@@ -35,6 +35,10 @@ em, .text-italic {
     font-style: italic;
 }
 
+small, .text-small {
+    font-size: 80%;
+}
+
 code, .text-monospace {
     font-family: family('monospace');
 }
@@ -49,6 +53,18 @@ code, .text-monospace {
 
 .text-display {
     font-size: size('display');
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 @each $key, $color in $colors {

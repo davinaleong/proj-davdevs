@@ -120,6 +120,10 @@ em, .text-italic {
   font-style: italic;
 }
 
+small, .text-small {
+  font-size: 80%;
+}
+
 code, .text-monospace {
   font-family: Source Code Pro, Courier New, monospace;
 }
@@ -134,6 +138,18 @@ code, .text-monospace {
 
 .text-display {
   font-size: 8rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-black {
