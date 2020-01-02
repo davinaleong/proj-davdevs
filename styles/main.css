@@ -102,6 +102,7 @@ div.landing-middle div.cell-right {
 }
 
 div.landing-lower {
+  margin-top: -1px;
   height: 10vh;
   border-radius: 0 0 50% 50%;
   background-color: #827717;

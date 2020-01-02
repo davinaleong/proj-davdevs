@@ -44,7 +44,6 @@ $colors: (
         'base': #ffeb3b,
         'light': #FFF176,
         'dark': #FBC02D,
-        '900': #827717,
         'font': #000
     ),
     'orange': (
@@ -52,6 +51,9 @@ $colors: (
         'light': #FFB74D,
         'dark': #F57C00,
         'font': #fff
+    ),
+    'lime': (
+        '900': #827717,
     )
 );
 @function color($color, $tint) {

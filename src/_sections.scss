@@ -40,8 +40,9 @@ div.landing-middle div.cell-right {
 }
 
 div.landing-lower {
+    margin-top: -1px;
     height: 10vh;
     border-radius: 0 0 50% 50%;
-    background-color: color('yellow', '900');
+    background-color: color('lime', '900');
     box-shadow: $box-shadow;
 }
