@@ -28,6 +28,10 @@ code, .text-monospace {
     font-family: family('body');
 }
 
+.text-display {
+    font-size: size('display');
+}
+
 @each $key, $color in $colors {
     .text-#{$key} {
         color: map-get($color, 'base');

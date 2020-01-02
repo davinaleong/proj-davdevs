@@ -21,6 +21,28 @@ section {
   min-height: 100vh;
 }
 
+/* Header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #212121;
+  background-color: #ffeb3b;
+  padding: 0.5rem;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
+nav ul {
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 /* Headings */
 h1, .h1 {
   font-family: Montserrat, Verdana, Arial, sans-serif;
@@ -77,6 +99,10 @@ code, .text-monospace {
 
 .text-body {
   font-family: Source Sans Pro, Arial, sans-serif;
+}
+
+.text-display {
+  font-size: 8rem;
 }
 
 .text-black {
