@@ -1,4 +1,5 @@
 button {
+    display: inline-block;
     padding: spacer('2');
     color: color('white', 'base');
     background-color: color('gray', '900');
@@ -8,4 +9,16 @@ button {
 button:hover {
     cursor: pointer;
     background-color: color('gray', '800');
+}
+
+@each $key, $color in $colors {
+    @if $key != 'gray' and $key != 'white' and $key != 'black' {
+        button.bg-#{$key} {
+            color: map-get($color, 'font');
+        }
+    
+        button.bg-#{$key}:hover {
+            background-color: map-get($color, 'dark');
+        }
+    }
 }

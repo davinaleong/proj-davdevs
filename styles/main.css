@@ -557,6 +557,7 @@ code, .text-monospace {
 }
 
 button {
+  display: inline-block;
   padding: 0.5rem;
   color: #fff;
   background-color: #212121;
@@ -567,5 +568,45 @@ button {
 button:hover {
   cursor: pointer;
   background-color: #424242;
+}
+
+button.bg-blue {
+  color: #fff;
+}
+
+button.bg-blue:hover {
+  background-color: #1976d2;
+}
+
+button.bg-red {
+  color: #fff;
+}
+
+button.bg-red:hover {
+  background-color: #D32F2F;
+}
+
+button.bg-green {
+  color: #fff;
+}
+
+button.bg-green:hover {
+  background-color: #388E3C;
+}
+
+button.bg-yellow {
+  color: #000;
+}
+
+button.bg-yellow:hover {
+  background-color: #FBC02D;
+}
+
+button.bg-orange {
+  color: #fff;
+}
+
+button.bg-orange:hover {
+  background-color: #F57C00;
 }
 /*# sourceMappingURL=main.css.map */
