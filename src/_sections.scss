@@ -81,3 +81,9 @@ section.work div.work-cell-design,
 section.work div.work-cell-develop {
     text-align: center;
 }
+
+/* Project Showcase */
+section.project-showcase {
+    padding: spacer('2');
+    background-color: color('gray', '800');
+}

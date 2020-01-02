@@ -147,6 +147,12 @@ section.work div.work-cell-develop {
   text-align: center;
 }
 
+/* Project Showcase */
+section.project-showcase {
+  padding: 0.5rem;
+  background-color: #424242;
+}
+
 /* Headings */
 h1, .h1 {
   font-family: Montserrat, Verdana, Arial, sans-serif;
