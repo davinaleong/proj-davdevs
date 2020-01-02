@@ -7,6 +7,25 @@
     }
 }
 
+/* Links */
+a, a:visited, a:focus {
+    color: color('orange', 'base');
+    text-decoration: none;
+}
+
+a:hover {
+    color: color('orange', 'dark');
+    cursor: pointer;
+}
+
+@each $key, $color in $colors {
+    @if $key != 'gray' and $key != 'black' and $key != 'white' $key != 'orange' {
+        a.text-#{$key}:hover {
+            color: color($key, 'dark');
+        }
+    }
+}
+
 /* Text Mutations */
 strong, b, .text-bold {
     font-weight: bold;

@@ -80,6 +80,37 @@ h6, .h6 {
   font-weight: normal;
 }
 
+/* Links */
+a, a:visited, a:focus {
+  color: #FF9800;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F57C00;
+  cursor: pointer;
+}
+
+a.text-blue:hover {
+  color: #1976d2;
+}
+
+a.text-red:hover {
+  color: #D32F2F;
+}
+
+a.text-green:hover {
+  color: #388E3C;
+}
+
+a.text-yellow:hover {
+  color: #FBC02D;
+}
+
+a.text-orange:hover {
+  color: #F57C00;
+}
+
 /* Text Mutations */
 strong, b, .text-bold {
   font-weight: bold;
