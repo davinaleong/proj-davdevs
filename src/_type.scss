@@ -55,6 +55,7 @@ code, .text-monospace {
     font-size: size('display');
 }
 
+/* Text Alignment */
 .text-left {
     text-align: left;
 }
@@ -67,6 +68,7 @@ code, .text-monospace {
     text-align: right;
 }
 
+/* Text Colors */
 @each $key, $color in $colors {
     .text-#{$key} {
         color: map-get($color, 'base');
@@ -74,5 +76,12 @@ code, .text-monospace {
 
     .bg-#{$key} {
         background-color: map-get($color, 'base');
+    }
+}
+
+/* Text Sizes */
+@each $key, $size in $sizes {
+    .text-#{$key} {
+        font-size: $size;
     }
 }

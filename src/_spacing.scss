@@ -15,19 +15,19 @@
         margin-bottom: $spacer;
     }
 
-    .mt-#{key} {
+    .mt-#{$key} {
         margin-top: $spacer;
     }
 
-    .mr-#{key} {
+    .mr-#{$key} {
         margin-right: $spacer;
     }
 
-    .mb-#{key} {
+    .mb-#{$key} {
         margin-bottom: $spacer;
     }
 
-    .mr-#{key} {
+    .mr-#{$key} {
         margin-right: $spacer;
     }
 
@@ -46,19 +46,19 @@
         padding-bottom: $spacer;
     }
 
-    .pt-#{key} {
+    .pt-#{$key} {
         padding-top: $spacer;
     }
 
-    .pr-#{key} {
+    .pr-#{$key} {
         padding-right: $spacer;
     }
 
-    .pb-#{key} {
+    .pb-#{$key} {
         padding-bottom: $spacer;
     }
 
-    .pr-#{key} {
+    .pr-#{$key} {
         padding-right: $spacer;
     }
 }
