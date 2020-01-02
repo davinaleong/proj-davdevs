@@ -15,35 +15,42 @@ $colors: (
         '900': #212121
     ),
     'black': (
-        'base': #000
+        'base': #000,
+        'font': #fff
     ),
     'white': (
-        'base': #fff
+        'base': #fff,
+        'font': #000
     ),
     'blue': (
         'base': #2196f3,
         'light': #64b5f6,
-        'dark': #1976d2
+        'dark': #1976d2,
+        'font': #fff
     ),
     'red': (
         'base': #F44336,
         'light': #E57373,
-        'dark': #D32F2F
+        'dark': #D32F2F,
+        'font': #fff
     ),
     'green': (
         'base': #4CAF50,
         'light': #81C784,
-        'dark': #388E3C
+        'dark': #388E3C,
+        'font': #fff
     ),
     'yellow': (
         'base': #ffeb3b,
         'light': #FFF176,
-        'dark': #FBC02D
+        'dark': #FBC02D,
+        'font': #000
     ),
     'orange': (
         'base': #FF9800,
         'light': #FFB74D,
-        'dark': #F57C00
+        'dark': #F57C00,
+        'font': #fff
     )
 );
 @function color($color, $tint) {
