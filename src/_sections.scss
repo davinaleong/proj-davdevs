@@ -1,9 +1,10 @@
 /* Sections */
-/* Main Landing */
 section {
     min-height: 90vh;
 }
 
+/* Home Page */
+/* Landing */
 div.landing-upper {
     color: color('gray', '900');
     background-color: color('yellow', 'base');
@@ -19,22 +20,22 @@ div.landing-middle {
     padding-left: spacer('1');
     padding-right: spacer('2');
     display: grid;
-    grid-template-areas: 'cell-left cell-right';
+    grid-template-areas: 'landing-cell-left landing-cell-right';
 }
 
-div.landing-middle div.cell-left,
-div.landing-middle div.cell-right {
+div.landing-middle div.landing-cell-left,
+div.landing-middle div.landing-cell-right {
     display: flex;
 }
 
-div.landing-middle div.cell-left {
-    grid-area: cell-left;
+div.landing-middle div.landing-cell-left {
+    grid-area: landing-cell-left;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-div.landing-middle div.cell-right {
-    grid-area: cell-right;
+div.landing-middle div.landing-cell-right {
+    grid-area: landing-cell-right;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -45,4 +46,32 @@ div.landing-lower {
     border-radius: 0 0 50% 50%;
     background-color: color('lime', '900');
     box-shadow: $box-shadow;
+}
+
+/* Work */
+section.work {
+    display: grid;
+    grid-template-areas:
+        'work-cell-design'
+        'work-cell-develop';
+}
+
+@media only screen and (min-width: breakpoint('phone-l')) {
+    section.work {
+        grid-template-areas: 
+            'work-cell-design work-cell-develop';
+    }
+}
+
+section.work div.work-cell-design {
+    grid-area: work-cell-design;
+}
+
+section.work div.work-cell-develop {
+    grid-area: work-cell-develop;
+}
+
+section.work div.work-cell-design,
+section.work div.work-cell-develop {
+    text-align: center;
 }
