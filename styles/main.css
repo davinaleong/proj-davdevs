@@ -17,6 +17,10 @@ html, body {
   min-height: 100vh;
 }
 
+section {
+  min-height: 100vh;
+}
+
 /* Headings */
 h1, .h1 {
   font-family: Montserrat, Verdana, Arial, sans-serif;
@@ -52,6 +56,83 @@ h6, .h6 {
   font-family: Montserrat, Verdana, Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: normal;
+}
+
+/* Text Mutations */
+strong, b, .text-bold {
+  font-weight: bold;
+}
+
+em, .text-italic {
+  font-style: italic;
+}
+
+code, .text-monospace {
+  font-family: Source Code Pro, Courier New, monospace;
+}
+
+.text-heading {
+  font-family: Montserrat, Verdana, Arial, sans-serif;
+}
+
+.text-body {
+  font-family: Source Sans Pro, Arial, sans-serif;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-blue {
+  color: #2196f3;
+}
+
+.bg-blue {
+  background-color: #2196f3;
+}
+
+.text-red {
+  color: #F44336;
+}
+
+.bg-red {
+  background-color: #F44336;
+}
+
+.text-green {
+  color: #4CAF50;
+}
+
+.bg-green {
+  background-color: #4CAF50;
+}
+
+.text-yellow {
+  color: #ffeb3b;
+}
+
+.bg-yellow {
+  background-color: #ffeb3b;
+}
+
+.text-orange {
+  color: #FF9800;
+}
+
+.bg-orange {
+  background-color: #FF9800;
 }
 
 /* Spacers */
@@ -473,5 +554,18 @@ h6, .h6 {
 
 .pr-key {
   padding-right: 5rem;
+}
+
+button {
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #212121;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #424242;
 }
 /*# sourceMappingURL=main.css.map */

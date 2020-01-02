@@ -1,0 +1,39 @@
+/* Headings */
+@each $key, $heading in $headings {
+    #{$key}, .#{$key} {
+        font-family: map-get($heading, 'family');
+        font-size: map-get($heading, 'size');
+        font-weight: normal;
+    }
+}
+
+/* Text Mutations */
+strong, b, .text-bold {
+    font-weight: bold;
+}
+
+em, .text-italic {
+    font-style: italic;
+}
+
+code, .text-monospace {
+    font-family: family('monospace');
+}
+
+.text-heading {
+    font-family: family('heading');
+}
+
+.text-body {
+    font-family: family('body');
+}
+
+@each $key, $color in $colors {
+    .text-#{$key} {
+        color: map-get($color, 'base');
+    }
+
+    .bg-#{$key} {
+        background-color: map-get($color, 'base');
+    }
+}

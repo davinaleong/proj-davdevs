@@ -25,15 +25,25 @@ $colors: (
         'light': #64b5f6,
         'dark': #1976d2
     ),
-    'amber': (
-        'base': #ffc107,
-        'light': #FFD54F,
-        'dark': #FFA000
+    'red': (
+        'base': #F44336,
+        'light': #E57373,
+        'dark': #D32F2F
+    ),
+    'green': (
+        'base': #4CAF50,
+        'light': #81C784,
+        'dark': #388E3C
     ),
     'yellow': (
         'base': #ffeb3b,
         'light': #FFF176,
         'dark': #FBC02D
+    ),
+    'orange': (
+        'base': #FF9800,
+        'light': #FFB74D,
+        'dark': #F57C00
     )
 );
 @function color($color, $tint) {
