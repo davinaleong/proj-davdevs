@@ -8,12 +8,12 @@ header {
     box-shadow: $box-shadow;
 }
 
-nav ul {
+header nav ul {
     font-size: size('large');
     list-style: none;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin-right: spacer('3');
 }

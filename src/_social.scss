@@ -1,0 +1,16 @@
+nav.social {
+    position: fixed;
+    top: 40vh;
+    background-color: color('yellow', 'base');
+    box-shadow: $box-shadow;
+}
+
+nav.social ul {
+    list-style: none;
+}
+
+nav.social ul li {
+    padding: spacer('1');
+    font-size: size('large');
+    text-align: center;
+}
