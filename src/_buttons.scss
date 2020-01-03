@@ -22,3 +22,9 @@ button:hover {
         }
     }
 }
+
+button.top {
+    position: fixed;
+    right: spacer('2');
+    bottom: spacer('2');
+}

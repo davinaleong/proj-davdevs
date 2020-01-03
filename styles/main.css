@@ -908,6 +908,12 @@ button.bg-orange:hover {
   background-color: #F57C00;
 }
 
+button.top {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+
 div.cards {
   display: -ms-grid;
   display: grid;
