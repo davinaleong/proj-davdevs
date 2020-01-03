@@ -1,0 +1,11 @@
+div.modal {
+    position: fixed;
+    top: spacer('2');
+    right: spacer('2');
+    width: 96vw;
+    height: 98vh;
+    padding: spacer('3');
+    color: color('gray', '900');
+    background-color: color('yellow', 'base');
+    box-shadow: $box-shadow;
+}
