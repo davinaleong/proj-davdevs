@@ -210,6 +210,7 @@ div.modal {
   background-color: #ffeb3b;
   -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+  text-align: center;
 }
 
 /* Headings */
@@ -571,7 +572,7 @@ code, .text-monospace {
   margin-right: 1rem;
 }
 
-.mb-3 {
+.mb-3, div.modal div.content h1 {
   margin-bottom: 1rem;
 }
 

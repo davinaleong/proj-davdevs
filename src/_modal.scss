@@ -8,4 +8,9 @@ div.modal {
     color: color('gray', '900');
     background-color: color('yellow', 'base');
     box-shadow: $box-shadow;
+    text-align: center;
+}
+
+div.modal div.content h1 {
+    @extend .mb-3;
 }

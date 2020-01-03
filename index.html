@@ -27,7 +27,7 @@
                     <li title="Projects"><i class="fal fa-laptop-code"></i></li>
                     <li title="Skills"><i class="fal fa-code"></i></li>
                     <li title="Contact"><i class="fal fa-mobile"></i></li>
-                    <li title="?"><i class="fal fa-question"></i></li>
+                    <li title="?"><a href="#" onclick="modal.show();"><i class="fal fa-question"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -81,21 +81,20 @@
         </footer>
     </main>
 
-    <div class="modal">
+    <div class="modal hidden">
         <div class="text-right">
-            <button type="button"><i class="fal fa-times fa-2x"></i></button>
+            <button type="button" onclick="modal.hide();"><i class="fal fa-times fa-2x"></i></button>
         </div>
 
         <div class="content">
             <h1 class="h3">Something funny...</h1>
-            <div class="funny">
-                <p>Lorem ipsum</p>
-            </div>
+            <p class="funny"></p>
         </div>
     </div>
 
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/projects.js"></script>
     <script src="./scripts/showcase.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 </html>
