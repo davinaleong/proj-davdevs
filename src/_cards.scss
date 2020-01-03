@@ -1,0 +1,23 @@
+div.cards {
+    display: grid;
+    grid-gap: spacer('2') spacer('2');
+}
+
+@media only screen and (min-width: breakpoint('phone-l')) {
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+div.card {
+    background-color: color('gray', '800');
+    box-shadow: $box-shadow;
+}
+
+div.card img {
+    width: 100%;
+}
+
+div.card div.content {
+    padding: spacer('2');
+}

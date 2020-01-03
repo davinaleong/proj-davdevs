@@ -17,6 +17,10 @@ html, body {
   min-height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Header */
 header {
   position: -webkit-sticky;
@@ -40,10 +44,6 @@ nav ul li {
 }
 
 /* Sections */
-section {
-  min-height: 90vh;
-}
-
 /* Home Page */
 /* Landing */
 img.logo {
@@ -148,7 +148,8 @@ section.work div.work-cell-develop {
 }
 
 /* Project Showcase */
-section.project-showcase {
+section.showcase {
+  height: auto;
   padding: 0.5rem;
   background-color: #424242;
 }
@@ -679,7 +680,7 @@ code, .text-monospace {
   margin-right: 3rem;
 }
 
-.my-6 {
+.my-6, section.work {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -846,5 +847,32 @@ button.bg-orange {
 
 button.bg-orange:hover {
   background-color: #F57C00;
+}
+
+div.cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5rem 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  div.cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+div.card {
+  background-color: #424242;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
+div.card img {
+  width: 100%;
+}
+
+div.card div.content {
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

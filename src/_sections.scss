@@ -1,7 +1,4 @@
 /* Sections */
-section {
-    min-height: 90vh;
-}
 
 /* Home Page */
 /* Landing */
@@ -57,6 +54,7 @@ div.landing-lower {
 /* Work */
 section.work {
     display: grid;
+    @extend .my-6;
     grid-template-areas:
         'work-cell-design'
         'work-cell-develop';
@@ -83,7 +81,8 @@ section.work div.work-cell-develop {
 }
 
 /* Project Showcase */
-section.project-showcase {
+section.showcase {
+    height: auto;
     padding: spacer('2');
     background-color: color('gray', '800');
 }
