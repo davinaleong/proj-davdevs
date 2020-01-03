@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
-    projects.sort((a, b) => {
-        const projectA = a.date.toLowerCase();
-        const projectB = b.date.toLowerCase();
+    const featuredProjects = projects.filter(project => project.featured);
+    featuredProjects.sort((a, b) => {
+        const projectA = a.name.toLowerCase();
+        const projectB = b.name.toLowerCase();
 
         let comparison = 0;
         if (projectA > projectB) {
-            comparison = -1;
-        } else if (projectA < projectB) {
             comparison = 1;
+        } else if (projectA < projectB) {
+            comparison = -1;
         } else {
             comparison = 0;
         }
@@ -16,7 +17,8 @@ $(document).ready(function() {
         return comparison;
     });
 
-    projects.forEach(project => {
+    for(let i = 0; i < 4; ++i) {
+        const project = featuredProjects[i];
         $('section.showcase div.cards').append(
             '<div class="card">' +
             '\t<img src="./assets/images/' + project.image + '">' +
@@ -26,6 +28,6 @@ $(document).ready(function() {
             '\t</div>' +
             '</div>'
         );
-    });
+    }
     
 });

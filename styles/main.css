@@ -148,10 +148,22 @@ section.work div.work-cell-develop {
 }
 
 /* Project Showcase */
-section.showcase {
+section.home-showcase {
+  background-color: #424242;
+}
+
+section.showcase, section.home-showcase {
   height: auto;
   padding: 0.5rem;
-  background-color: #424242;
+}
+
+/* Other Pages */
+section.landing-half div.landing-upper {
+  height: 20vh;
+}
+
+section.landing-half div.landing-lower {
+  background-color: #ffeb3b;
 }
 
 /* Footer */
@@ -692,7 +704,7 @@ code, .text-monospace {
   margin-right: 2rem;
 }
 
-.mb-5 {
+.mb-5, section.landing-half {
   margin-bottom: 2rem;
 }
 

@@ -81,8 +81,25 @@ section.work div.work-cell-develop {
 }
 
 /* Project Showcase */
+section.home-showcase {
+    @extend section.showcase;
+    background-color: color('gray', '800');
+}
+
 section.showcase {
     height: auto;
     padding: spacer('2');
-    background-color: color('gray', '800');
+}
+
+/* Other Pages */
+section.landing-half {
+    @extend .mb-5;
+}
+
+section.landing-half div.landing-upper {
+    height: 20vh;
+}
+
+section.landing-half div.landing-lower {
+    background-color: color('yellow', 'base');
 }
