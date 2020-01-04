@@ -17,6 +17,16 @@ html, body {
   min-height: 100vh;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+img.shadow {
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
 .hidden {
   display: none;
 }
@@ -596,7 +606,7 @@ code, .text-monospace {
   padding: 1rem;
 }
 
-.px-3 {
+.px-3, section.project-item {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -943,10 +953,6 @@ div.card {
   background-color: #424242;
   -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
-}
-
-div.card img {
-  width: 100%;
 }
 
 div.card div.content {

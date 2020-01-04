@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Davina Leong">
     <meta name="description" content="Davina Leong's personal website">
-    <meta name="keywords" content="davina,leong,personal,website,php,javascript,web development,html,css,sass,design,develop,illustrator,photoshop,laravel,reactjs,jquery,nodejs,mysql,project,projects,frontend,backend,fontawesome">
-    <title>Dav / Devs</title>
+    <meta name="keywords" content="davina,leong,personal,website,php,javascript,web development,html,css,sass,design,develop,illustrator,photoshop,laravel,reactjs,jquery,nodejs,mysql">
+    <title>Dav / Devs - Projects</title>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/fonts.css">
@@ -40,42 +40,24 @@
             </nav>
         </header>
 
-        <section class="landing">
+        <section class="landing-half">
             <div class="landing-upper">
                 <div class="landing-content text-center">
-                    <img class="logo mb-3" src="./assets/icons/logo-black.svg">
-                    <h1 class="mb-2">Dav / Devs</h1>
-                    <p class="text-monospace mb-2">web developer</p class="text-monospace">
-                    <p class="text-monospace text-italic"><small>just keep learning...</small></p>
+                    <h1 class="mb-2">Projects</h1>
                 </div>
-            </div>
-            <div class="landing-middle">
-                <div class="landing-cell-left"><img src="./assets/images/index-01.svg" width="160px"></div>
-                <div class="landing-cell-right"><img src="./assets/images/index-02.svg" width="160px"></div>
             </div>
             <div class="landing-lower"></div>
         </section>
 
-        <section class="work">
-            <h2 class="hidden">What I do</h2>
-            <div class="work-cell-design">
-                <h3 class="h3 text-monospace text-blue-gray mt-5 mb-3">Design</h3>
-                <div class="text-yellow mb-3"><i class="fal fa-drafting-compass fa-9x"></i></div>
-                <p class="mb-3">UX / Frontend</p>
-                <p><a href="./skills.html">View more</a></p>
-            </div>
+        <section class="project-item">
+            <h2 class="name h3 text-center mb-3">Project</h2>
+            
+            <p class="image mb-3"><em>image</em></p>
 
-            <div class="work-cell-develop">
-                <h3 class="h3 text-monospace text-blue-gray mt-5 mb-3">Develop</h3>
-                <div class="text-yellow mb-3"><i class="fal fa-laptop-code fa-9x"></i></div>
-                <p class="mb-3">PHP / JavaScript / Backend</p>
-                <p><a href="./skills.html">View more</a></p>
-            </div>
-        </section>
+            <p class="category">Category</p>
+            <p class="date mb-3"><small>Date</small></p>
 
-        <section class="showcase">
-            <h2 class="hidden">Projects I've made</h2>
-            <div class="cards"></div>
+            <p class="writeUp text-left">Write up</p>
         </section>
 
         <footer>
@@ -109,15 +91,16 @@
         <ul>
             <li><a href="https://dev.to/davinaleong"><i class="fab fa-dev"></i></a></li>
             <li><a href="https://github.com/davinaleong"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://devrant.com/users/DavinaLeong">dR</a></li>
+            <li><a  href="https://devrant.com/users/DavinaLeong">dR</a></li>
         </ul>
     </nav>
 
     <button class="top bg-orange" type="button" onclick="location.href='./#top'"><i class="fal fa-chevron-up fa-lg"></i></button>
 
     <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/moment.min.js"></script>
     <script src="./scripts/projects.js"></script>
-    <script src="./scripts/featured.js"></script>
+    <script src="./scripts/item.js"></script>
     <script src="./scripts/modal.js"></script>
 </body>
 </html>

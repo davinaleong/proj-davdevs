@@ -5,7 +5,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true
+        "featured": true,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-02",
@@ -13,7 +19,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true
+        "featured": true,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -21,7 +33,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true
+        "featured": true,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -29,7 +47,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true
+        "featured": true,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -37,7 +61,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true
+        "featured": true,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -45,7 +75,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-02.jpg",
         "link": "./project-item.html",
-        "featured": false
+        "featured": false,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -53,7 +89,13 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-02.jpg",
         "link": "./project-item.html",
-        "featured": false
+        "featured": false,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     },
     {
         "date": "2020-03-01",
@@ -61,6 +103,12 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-02.jpg",
         "link": "./project-item.html",
-        "featured": false
+        "featured": false,
+        "overview": "Lorem ipsum",
+        "techStack": [
+            "HTML",
+            "CSS"
+        ],
+        "writeUp": "Hello\r\n\r\nWorld"
     }
 ];

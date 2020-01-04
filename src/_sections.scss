@@ -103,3 +103,7 @@ section.landing-half div.landing-upper {
 section.landing-half div.landing-lower {
     background-color: color('yellow', 'base');
 }
+
+section.project-item {
+    @extend .px-3;
+}
