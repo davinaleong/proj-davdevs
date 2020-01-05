@@ -94,6 +94,11 @@ div.landing-middle div.landing-cell-right {
   display: flex;
 }
 
+div.landing-middle div.landing-cell-left img,
+div.landing-middle div.landing-cell-right img {
+  width: auto;
+}
+
 div.landing-middle div.landing-cell-left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
