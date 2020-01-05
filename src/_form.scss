@@ -1,0 +1,25 @@
+.contact {
+    @extend .mx-3;
+}
+
+form table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+form table tbody tr th,
+form table tbody tr td {
+    @extend .p-1;
+}
+
+form table tbody tr td input,
+form table tbody tr td select,
+form table tbody tr td textarea {
+    display: inline-block;
+    width: 100%;
+    @extend .p-1;
+    border-radius: spacer('1');
+    color: color('white', 'base');
+    background-color: color('gray', '800');
+}
+

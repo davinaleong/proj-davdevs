@@ -176,6 +176,21 @@ section.landing-half div.landing-lower {
   background-color: #ffeb3b;
 }
 
+form table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+form table tbody tr td input,
+form table tbody tr td select,
+form table tbody tr td textarea {
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #424242;
+}
+
 /* Footer */
 footer ul {
   list-style: none;
@@ -482,7 +497,10 @@ code, .text-monospace {
   margin-right: 0.25rem;
 }
 
-.p-1 {
+.p-1, form table tbody tr th,
+form table tbody tr td, form table tbody tr td input,
+form table tbody tr td select,
+form table tbody tr td textarea {
   padding: 0.25rem;
 }
 
@@ -576,7 +594,7 @@ code, .text-monospace {
   margin: 1rem;
 }
 
-.mx-3 {
+.mx-3, .contact {
   margin-left: 1rem;
   margin-right: 1rem;
 }

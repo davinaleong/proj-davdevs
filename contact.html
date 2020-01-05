@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Davina Leong">
+    <meta name="description" content="Davina Leong's personal website">
+    <meta name="keywords" content="davina,leong,personal,website,php,javascript,web development,html,css,sass,design,develop,illustrator,photoshop,laravel,reactjs,jquery,nodejs,mysql">
+    <title>Dav / Devs - Contact</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+<body id="top">
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>D / D</li>
+                    <li title="Home">
+                        <a href="./index.html"><i class="fal fa-home"></i></a>
+                    </li>
+                    <li title="Projects">
+                        <a href="./projects.html"><i class="fal fa-laptop-code"></i></a>
+                    </li>
+                    <li title="Skills">
+                        <a href="./skills.html"><i class="fal fa-code"></i></a>
+                    </li>
+                    <li title="Contact">
+                        <a href="./contact.html"><i class="fal fa-mobile"></i></a>
+                    </li>
+                    <li title="?">
+                        <a href="#" onclick="modal.show();"><i class="fal fa-question"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="landing-half">
+            <div class="landing-upper">
+                <div class="landing-content text-center">
+                    <h1 class="mb-2">Contact</h1>
+                </div>
+            </div>
+            <div class="landing-lower"></div>
+        </section>
+
+        <section class="contact text-center mb-3">
+            <h1 class="hidden">Lord Christ Jesus, can you shoo away all those head-hunters?</h1>
+
+            <form method="post" action="https://formspree.io/davina.leong@outlook.com">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input name="name" placeholder="Name *" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="email" placeholder="Email *" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="type" placeholder="Subject *" required>
+                                    <option value="">-- Subjects --</option>
+                                    <option value="Project">Need a project?</option>
+                                    <option value="Hangout">Meet up for coffee or tea?</option>
+                                    <option value="Job">Hire me.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="Message" rows="6" required></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="text-right">
+                            <td><button class="bg-orange" type="submit"><i class="fal fa-paper-plane"></i> Send</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form method="post" action="https://formspree.io/leong.shi.yun@gmail.com">
+        </section>
+
+        <div class="text-center">
+            <button class="text-orange" type="button"
+                onclick="window.history.back();"><i class="fal fa-chevron-left"></i> Back</button>
+        </div>
+
+        <footer>
+            <ul>
+                <li class="footer-cell-email"><a href="mailto:davina.leong@outlook.com">
+                    <i class="fas fa-envelope mr-2"></i> davina.leong@outlook.com</a></li>
+                <li class="footer-cell-dev"><a href="https://dev.to/davinaleong">
+                    <i class="fab fa-dev mr-2"></i> DEV</a></li>
+                <li class="footer-cell-gh"><a href="https://github.com/davinaleong">
+                    <i class="fab fa-github mr-2"></i> GitHub</a></li>
+                <li class="footer-cell-dr"><a href="https://devrant.com/users/DavinaLeong">
+                    <span class="mr-2">dR</span> devRant</a></li>
+            </ul>
+            <p>davdevs &copy; Davina Leong, 2020</p>
+        </footer>
+    </main>
+
+    <div class="modal hidden">
+        <div class="text-right">
+            <button type="button" onclick="modal.hide();"><i class="fal fa-times fa-2x"></i></button>
+        </div>
+
+        <div class="content">
+            <h1 class="h4">A lame joke...</h1>
+            <p class="funny"></p>
+            <p class="mt-5"><small>A list of original lame jokes.<br>Keep launching this modal to see more lame jokes.</small></p>
+        </div>
+    </div>
+
+    <nav class="social">
+        <ul>
+            <li><a href="https://dev.to/davinaleong"><i class="fab fa-dev"></i></a></li>
+            <li><a href="https://github.com/davinaleong"><i class="fab fa-github"></i></a></li>
+            <li><a  href="https://devrant.com/users/DavinaLeong">dR</a></li>
+        </ul>
+    </nav>
+
+    <button class="top bg-orange" type="button" onclick="location.href='./#top'">
+        <i class="fal fa-chevron-up fa-lg"></i></button>
+
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>
