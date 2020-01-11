@@ -1,9 +1,9 @@
 const states = {
-    "INDEX": "INDEX",
-    "PROJECTS": "PROJECTS",
-    "PROJECT": "PROJECT",
-    "SKILLS": "SKILLS",
-    "CONTACT": "CONTACT"
+    "INDEX": "Home",
+    "PROJECTS": "Projects",
+    "PROJECT": "Projects",
+    "SKILLS": "Skills",
+    "CONTACT": "Contact"
 };
 
 export default states;
