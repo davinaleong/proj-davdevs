@@ -11,8 +11,27 @@ button:hover {
     background-color: color('gray', '800');
 }
 
+button.link {
+    padding: 0;
+    color: color('gray', '300');
+    background-color: transparent;
+    box-shadow: none;
+}
+
+button.link:hover {
+    color: color('gray', '500');
+}
+
 @each $key, $color in $colors {
     @if $key != 'gray' and $key != 'white' and $key != 'black' {
+        button.link-#{$key} {
+            color: map-get($color, 'base');
+        }
+
+        button.link-#{$key}:hover {
+            color: map-get($color, 'dark');
+        }
+
         button.bg-#{$key} {
             color: map-get($color, 'font');
         }

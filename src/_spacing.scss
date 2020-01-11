@@ -27,8 +27,8 @@
         margin-bottom: $spacer;
     }
 
-    .mr-#{$key} {
-        margin-right: $spacer;
+    .ml-#{$key} {
+        margin-left: $spacer;
     }
 
     // Paddings
@@ -58,7 +58,7 @@
         padding-bottom: $spacer;
     }
 
-    .pr-#{$key} {
-        padding-right: $spacer;
+    .pl-#{$key} {
+        padding-left: $spacer;
     }
 }
