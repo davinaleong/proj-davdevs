@@ -6,9 +6,13 @@ import * as serviceWorker from './serviceWorker';
 
 import pages from './data/pages';
 import items from './data/items';
+import site from './data/site';
 
 ReactDOM.render(
-   <App pages={pages} items={items} />,
+    <App
+        site={site}
+        pages={pages}
+        items={items} />,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

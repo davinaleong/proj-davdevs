@@ -1,7 +1,11 @@
 const site = {
     "title": "Dav / Devs",
-    "jobDescription": "web developer",
-    "tagline": "just keep learning..."
+    "occupation": "web developer",
+    "tagline": "just keep learning...",
+    "assets": {
+        "icon": "./icons/",
+        "image": "./images/"
+    }
 };
 
 export default site;
