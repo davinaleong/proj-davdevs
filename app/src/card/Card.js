@@ -3,14 +3,14 @@ import React from 'react';
 function Card(props) {
     return (
         <div className="card">
-            <img src={props.renderAsset('image', '')} />
+            <img src={props.renderAsset('image', props.project.image)} />
             <div className="content">
                 <h3 className="h5 mb-1">
                     <button className="link link-orange" type="button">
-                        Project Name
+                        {props.project.name}
                     </button>
                 </h3>
-                <p>Project Category</p>
+                <p>{props.project.category}</p>
             </div>
         </div>
     );

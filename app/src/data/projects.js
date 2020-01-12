@@ -61,7 +61,7 @@ const projects = [
         "category": "Project Category",
         "image": "placeholder-01.jpg",
         "link": "./project-item.html",
-        "featured": true,
+        "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
             "HTML",
@@ -112,3 +112,5 @@ const projects = [
         "writeUp": "Hello\r\n\r\nWorld"
     }
 ];
+
+export default projects;

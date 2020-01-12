@@ -14,7 +14,11 @@ function IndexPage(props) {
             <WorkSection
                 site={props.site}
                 renderAsset={props.renderAsset} />
-            <ShowcaseSection />
+            <ShowcaseSection
+                projects={props.projects}
+                featured={true}
+                limit={4}
+                renderAsset={props.renderAsset} />
         </div>
     );
 }

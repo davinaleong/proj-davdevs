@@ -4,8 +4,8 @@ import NavItem from './NavItem';
 
 function Header(props) {
     const items = [];
-    props.items.forEach(item => {
-        return items.push(<NavItem item={item} />);
+    props.items.forEach((item, index) => {
+        return items.push(<NavItem key={'n'+index} item={item} />);
     });
 
     return (
