@@ -14,6 +14,17 @@ class App extends React.Component {
       }
     };
   }
+  
+  breakLines = (string, keyPrefix) => {
+    const lines = [];
+    const split = string.split(/\r\n/g);
+    split.forEach((segment, index) => {
+      lines.push(
+        <p key={keyPrefix + index}>{segment}</p>
+      );
+    });
+    return lines;
+  }
 
   gotoPage = (page) => {
     const previousPage = this.state.page.current;

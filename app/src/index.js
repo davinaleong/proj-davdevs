@@ -8,13 +8,15 @@ import site from './data/site';
 import pages from './data/pages';
 import items from './data/items';
 import projects from './data/projects';
+import jokes from './data/jokes';
 
 ReactDOM.render(
     <App
         site={site}
         pages={pages}
         items={items}
-        projects={projects} />,
+        projects={projects}
+        jokes={jokes} />,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
