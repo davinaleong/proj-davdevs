@@ -58,9 +58,11 @@ class App extends React.Component {
       case this.props.pages.INDEX:
         return <IndexPage
           site={this.props.site}
+          pages={this.props.pages}
           projects={this.props.projects}
           renderAsset={this.renderAsset}
-          renderSkills={this.renderSkills} />;
+          renderSkills={this.renderSkills}
+          gotoPage={this.gotoPage} />;
       
       case this.props.pages.PROJECTS:
         return <ProjectsPage />;

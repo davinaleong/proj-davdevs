@@ -13,8 +13,10 @@ function IndexPage(props) {
                 renderAsset={props.renderAsset} />
             <WorkSection
                 site={props.site}
+                pages={props.pages}
                 renderAsset={props.renderAsset}
-                renderSkills={props.renderSkills} />
+                renderSkills={props.renderSkills}
+                gotoPage={props.gotoPage} />
             <ShowcaseSection
                 projects={props.projects}
                 featured={true}

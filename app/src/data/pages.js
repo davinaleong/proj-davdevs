@@ -1,7 +1,7 @@
 const states = {
     "INDEX": "Home",
     "PROJECTS": "Projects",
-    "PROJECT": "Projects",
+    "PROJECT_ITEM": "Projects",
     "SKILLS": "Skills",
     "CONTACT": "Contact"
 };
