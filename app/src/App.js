@@ -5,6 +5,7 @@ import IndexPage from './pages/IndexPage';
 import Footer from './footer/Footer';
 
 import Modal from './modal/Modal';
+import Social from './social/Social';
 
 class App extends React.Component {
   constructor(props) {
@@ -87,6 +88,7 @@ class App extends React.Component {
           <Header
             pages={this.props.pages}
             items={this.props.items}
+            gotoPage={this.gotoPage}
             showModal={this.showModal} />
   
           {this.renderPage()}
@@ -99,6 +101,9 @@ class App extends React.Component {
           jokes={this.props.jokes}
           showModal={this.showModal}
           breakLines={this.breakLines} />
+
+        <Social
+          social={this.props.site.social} />
       </div>
     );
   }

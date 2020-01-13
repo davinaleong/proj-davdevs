@@ -30,7 +30,7 @@ function ShowcaseSection(props) {
     for(let i = 0; i < limit; ++i) {
         cards.push(
             <Card
-                key={'c'+i}
+                key={'p'+i}
                 project={projects[i]}
                 renderAsset={props.renderAsset} />
         );

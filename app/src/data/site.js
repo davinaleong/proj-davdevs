@@ -13,12 +13,12 @@ const site = {
     "social": [
         {
             "name": "DEV",
-            "icon": "fab fa-dev mr-2",
+            "icon": "fab fa-dev",
             "cell": "dev",
             "link": "https://dev.to/davinaleong"
         }, {
             "name": "GitHub",
-            "icon": "fab fa-github mr-2",
+            "icon": "fab fa-github",
             "cell": "gh",
             "link": "http://github.com/davinaleong"
         }, {

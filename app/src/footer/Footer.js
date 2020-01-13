@@ -1,25 +1,13 @@
 import React from 'react';
 
+import FooterItem from './FooterItem';
+
 function Footer(props) {
     const items = [];
     props.site.social.forEach((item, index) => {
-        if (item.name === 'devRant') {
-            items.push(
-                <li key={'l'+index} className={'footer-cell-'+item.cell}>
-                    <a href={item.link}>
-                        <span className="mr-2">{item.icon}</span> {item.name}
-                    </a>
-                </li>
-            );
-        } else {
-            items.push(
-                <li key={'l'+index} className={'footer-cell-'+item.cell}>
-                    <a href={item.link}>
-                        <i className={item.icon}></i> {item.name}
-                    </a>
-                </li>
-            );
-        }
+        items.push(
+            <FooterItem key={'f'+index} item={item} />
+        );
     })
 
     return (
