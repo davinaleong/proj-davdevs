@@ -6,6 +6,7 @@ import Footer from './footer/Footer';
 
 import Modal from './modal/Modal';
 import Social from './social/Social';
+import BackToTopButton from './buttons/BackToTopButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -104,6 +105,8 @@ class App extends React.Component {
 
         <Social
           social={this.props.site.social} />
+
+        <BackToTopButton />
       </div>
     );
   }
