@@ -99,7 +99,18 @@ class App extends React.Component {
         break;
 
       case this.props.arrayTypes['2d']:
-        //
+        joined = [];
+        skills.forEach((row, i) => {
+          let joinedSnippet = '';
+
+          row.forEach((column, j) => {
+            joinedSnippet += j < column.length ? column + separator : column;
+          });
+
+          joined.push(
+            <div>{joinedSnippet}</div>
+          );
+        });
         break;
 
       default:
