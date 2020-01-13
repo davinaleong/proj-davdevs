@@ -54,7 +54,8 @@ class App extends React.Component {
         return <IndexPage
           site={this.props.site}
           projects={this.props.projects}
-          renderAsset={this.renderAsset} />;
+          renderAsset={this.renderAsset}
+          renderSkills={this.renderSkills} />;
       
       case this.props.page.PROJECTS:
         // return <ProjectsPage />;
@@ -80,6 +81,26 @@ class App extends React.Component {
 
   renderAsset = (type, filename) => {
     return this.props.site.assets[type] + filename;
+  }
+
+  renderSkills = (skills, separator, arrayType) => {
+    let joined = '';
+    switch(arrayType) {
+      case this.props.arrayTypes['1d']:
+        skills.forEach((skill, i) => {
+          joined += i < skills.length - 1 ? skill + separator : skill;
+        });
+        break;
+
+      case this.props.arrayTypes['2d']:
+        //
+        break;
+
+      default:
+        joined = '';
+        break;
+    }
+    return joined;
   }
 
   render() {

@@ -10,13 +10,19 @@ import items from './data/items';
 import projects from './data/projects';
 import jokes from './data/jokes';
 
+const arrayTypes = {
+    "1d": "1d",
+    "2d": "2d"
+};
+
 ReactDOM.render(
     <App
         site={site}
         pages={pages}
         items={items}
         projects={projects}
-        jokes={jokes} />,
+        jokes={jokes}
+        arrayTypes={arrayTypes} />,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

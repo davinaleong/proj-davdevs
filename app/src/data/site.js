@@ -10,6 +10,24 @@ const site = {
         "email": "davina.leong@outlook.com",
         "copyright": "davdavs @copy; Davina Leong"
     },
+    "skills": {
+        "design": {
+            "summarised": ["UX", "Frontend"],
+            "full": [
+                ['Illustrator', 'Photoshop', 'XD'],
+                ['Frontend', 'CSS', 'SASS']
+            ]
+        },
+        "develop": {
+            "summarised": ["PHP", "JavaScript", "Backend"],
+            "full": [
+                ['Backend', 'PHP', 'CraftCMS', 'Laravel'],
+                ['JavaScript', 'ReactJS', 'jQuery'],
+                ['NodeJS', 'Express', 'Jest', 'GraphQL'],
+                ['MySQL']
+            ]
+        }
+    },
     "social": [
         {
             "name": "DEV",
