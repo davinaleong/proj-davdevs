@@ -2,6 +2,9 @@ import React from 'react';
 
 import Header from './header/Header';
 import IndexPage from './pages/IndexPage';
+import Footer from './footer/Footer';
+
+import Modal from './modal/Modal';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,8 +14,15 @@ class App extends React.Component {
       page: {
         current: this.props.pages.INDEX,
         previous: this.props.pages.INDEX
-      }
+      },
+      modal: false
     };
+  }
+
+  showModal = (show) => {
+    this.setState({
+      modal: show
+    });
   }
   
   breakLines = (string, keyPrefix) => {
@@ -76,10 +86,19 @@ class App extends React.Component {
         <main>
           <Header
             pages={this.props.pages}
-            items={this.props.items}/>
+            items={this.props.items}
+            showModal={this.showModal} />
   
           {this.renderPage()}
         </main>
+
+        <Footer site={this.props.site} />
+
+        <Modal
+          modal={this.state.modal}
+          jokes={this.props.jokes}
+          showModal={this.showModal}
+          breakLines={this.breakLines} />
       </div>
     );
   }

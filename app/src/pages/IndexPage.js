@@ -4,7 +4,6 @@ import { render } from 'react-dom';
 import LandingSection from './../sections/LandingSection';
 import WorkSection from './../sections/WorkSection';
 import ShowcaseSection from './../sections/ShowcaseSection';
-import Footer from './../footer/Footer';
 
 function IndexPage(props) {
     return (
@@ -20,8 +19,6 @@ function IndexPage(props) {
                 featured={true}
                 limit={4}
                 renderAsset={props.renderAsset} />
-            <Footer
-                site={props.site}/>
         </div>
     );
 }

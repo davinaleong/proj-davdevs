@@ -11,7 +11,14 @@ function Header(props) {
     return (
         <header>
             <nav>
-                <ul>{items}</ul>
+                <ul>
+                    {items}
+                    <li title="?">
+                        <button className="link link-orange" type="button" onClick={() => {props.showModal(true)}}>
+                            <i className="fal fa-question"></i>
+                        </button>
+                    </li>
+                </ul>
             </nav>
         </header>
     );
