@@ -104,7 +104,7 @@ class App extends React.Component {
           let joinedSnippet = '';
 
           row.forEach((column, j) => {
-            joinedSnippet += j < column.length ? column + separator : column;
+            joinedSnippet += j < row.length - 1 ? column + separator : column;
           });
 
           joined.push(
