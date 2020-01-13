@@ -2,6 +2,11 @@ import React from 'react';
 
 import Header from './header/Header';
 import IndexPage from './pages/IndexPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectItemPage from './pages/ProjectItemPage';
+import SkillsPage from './pages/SkillsPage';
+import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 import Footer from './footer/Footer';
 
 import Modal from './modal/Modal';
@@ -42,14 +47,14 @@ class App extends React.Component {
     const previousPage = this.state.page.current;
     this.setState({
       page: {
-        current: previousPage,
-        previous: page
+        current: page,
+        previous: previousPage
       }
     });
   }
 
-  renderPage = () => {
-    switch(this.state.page.current) {
+  renderPage = (page) => {
+    switch(page) {
       case this.props.pages.INDEX:
         return <IndexPage
           site={this.props.site}
@@ -57,25 +62,20 @@ class App extends React.Component {
           renderAsset={this.renderAsset}
           renderSkills={this.renderSkills} />;
       
-      case this.props.page.PROJECTS:
-        // return <ProjectsPage />;
-        break;
+      case this.props.pages.PROJECTS:
+        return <ProjectsPage />;
 
-      case this.props.page.PROJECT:
-        // return <ProjectPage />;
-        break;
+      case this.props.pages.PROJECT_ITEM:
+        return <ProjectItemPage />;
 
-      case this.props.page.SKILLS:
-        // return <SkillsPage />;
-        break;
+      case this.props.pages.SKILLS:
+        return <SkillsPage />;
 
-      case this.props.page.CONTACT:
-        // return <ContactPage />;
-        break;
+      case this.props.pages.CONTACT:
+        return <ContactPage />;
 
       default:
-        // return <NotFoundPage />;
-        break;
+        return <NotFoundPage />;
     }
   }
 
@@ -113,7 +113,7 @@ class App extends React.Component {
             gotoPage={this.gotoPage}
             showModal={this.showModal} />
   
-          {this.renderPage()}
+          {this.renderPage(this.state.page.current)}
         </main>
 
         <Footer site={this.props.site} />

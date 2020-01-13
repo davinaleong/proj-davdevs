@@ -8,8 +8,9 @@ function NavItem(props) {
     } else {
         return (
             <li title={props.item.title}>
-                <button className="link link-orange" type="button">
-                    <i className={props.item.icon}></i></button>
+                <button className="link link-orange" type="button" onClick={() => {props.gotoPage(props.item.page)}}>
+                    <i className={props.item.icon}></i>
+                </button>
             </li>
         );
     }
