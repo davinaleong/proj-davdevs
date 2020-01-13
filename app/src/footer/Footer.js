@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FooterItem from './FooterItem';
+import Copyright from './Copyright';
 
 function Footer(props) {
     const items = [];
@@ -20,6 +21,7 @@ function Footer(props) {
                 </li>
                 {items}
             </ul>
+            <Copyright site={props.site} />
         </footer>
     );
 }

@@ -8,7 +8,7 @@ const site = {
     },
     "personal": {
         "email": "davina.leong@outlook.com",
-        "copyright": "davdavs @copy; Davina Leong 2020"
+        "copyright": "davdavs @copy; Davina Leong"
     },
     "social": [
         {
