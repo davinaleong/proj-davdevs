@@ -19,8 +19,8 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.pages.INDEX,
-        previous: this.props.pages.INDEX
+        current: this.props.pages.SKILLS, // TODO: Back to index
+        previous: this.props.pages.SKILLS
       },
       modal: false
     };
@@ -71,7 +71,11 @@ class App extends React.Component {
         return <ProjectItemPage />;
 
       case this.props.pages.SKILLS:
-        return <SkillsPage />;
+        return <SkillsPage
+          site={this.props.site}
+          page={this.state.page.current}
+          renderSkills={this.renderSkills}
+          gotoPage={this.gotoPage} />;
 
       case this.props.pages.CONTACT:
         return <ContactPage />;

@@ -1,9 +1,11 @@
 import React from 'react';
 
+import LandingHalfSection from './../sections/LandingHalfSection';
+
 function SkillsPage(props) {
     return (
         <div>
-            <h1>Skills Page</h1>
+            <LandingHalfSection page={props.page} />
         </div>
     );
 }
