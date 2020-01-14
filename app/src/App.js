@@ -12,6 +12,7 @@ import Footer from './footer/Footer';
 import Modal from './modal/Modal';
 import Social from './social/Social';
 import BackToTopButton from './buttons/BackToTopButton';
+import BackButton from './buttons/BackButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -86,7 +87,9 @@ class App extends React.Component {
         return <ContactPage />;
 
       default:
-        return <NotFoundPage />;
+        return <NotFoundPage
+          page={this.state.page}
+          gotoPage={this.gotoPAge} />;
     }
   }
 
@@ -137,6 +140,8 @@ class App extends React.Component {
             showModal={this.showModal} />
   
           {this.renderPage(this.state.page.current)}
+
+          <BackButton page={this.state.page} gotoPage={this.gotoPage}/>
         </main>
 
         <Footer site={this.props.site} />

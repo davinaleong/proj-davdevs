@@ -1,11 +1,11 @@
 import React from 'react';
 
-import LandingHalfSection from './../sections/LandingHalfSection';
+import LandingNotFoundSection from './../sections/LandingNotFoundSection';
 
 function NotFoundPage(props) {
     return (
         <div>
-            <h1>Page Not Found</h1>
+            <LandingNotFoundSection />
         </div>
     );
 }
