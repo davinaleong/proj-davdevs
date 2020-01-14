@@ -1,5 +1,9 @@
 import React from 'react';
 
+import InputField from './../fields/InputField';
+import SelectField from './../fields/SelectField';
+import TextareaField from './../fields/TextareaField';
+
 function ContactFormSection(props) {
     return (
         <section classsName="contact text-center mb-3">
@@ -10,27 +14,22 @@ function ContactFormSection(props) {
                     <tbody>
                         <tr>
                             <td>
-                                <input name="name" placeholder="Name *" required/>
+                                <InputField name="name" placeholder="Name *" required={true} />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input name="email" placeholder="Email *" required/>
+                                <InputField name="name" placeholder="Email *" required={true} />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select name="type" placeholder="Subject *" required>
-                                    <option value="">-- Subjects --</option>
-                                    <option value="Project">Need a project?</option>
-                                    <option value="Hangout">Meet up for coffee or tea?</option>
-                                    <option value="Job">Hire me.</option>
-                                </select>
+                                <SelectField name="type" placeholder="Subject *" required={true} group={props.site.subjects.group} options={props.site.subjects.options} />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <textarea name="Message" rows="6" required></textarea>
+                                <TextareaField name="Message" rows="6" required={true} />
                             </td>
                         </tr>
                     </tbody>

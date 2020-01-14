@@ -11,7 +11,7 @@ function ContactPage(props) {
     return (
         <div>
             <LandingHalfSection page={pageInfo.current} />
-            <ContactFormSection />
+            <ContactFormSection site={props.site} />
         </div>
     );
 }

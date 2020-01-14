@@ -4,7 +4,7 @@ function SelectField(props) {
     const options = [];
     props.options.forEach((option, index) => {
         options.push(
-            <option key={'o'+index} value={option.value}>{option.label}</option>
+            <option key={'o'+index} value={option.value}>{option.name}</option>
         );
     });
 

@@ -45,7 +45,22 @@ const site = {
             "cell": "dr",
             "link": "https://devrant.com/users/DavinaLeong"
         }
-    ]
+    ],
+    "subjects": {
+        "group": "Subjects",
+        "options": [
+            {
+                "name": "Need a project?",
+                "value": "Project"
+            }, {
+                "name": "Meet up for a chat?",
+                "value": "Hangout"
+            }, {
+                "name": "Hire me.",
+                "value": "Job"
+            }
+        ]
+    }
 };
 
 export default site;
