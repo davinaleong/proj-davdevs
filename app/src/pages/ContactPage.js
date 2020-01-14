@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LandingHalfSection from './../sections/LandingHalfSection';
+import ContactFormSection from './../sections/ContactFormSection';
 
 function ContactPage(props) {
     const pageInfo = {
@@ -10,6 +11,7 @@ function ContactPage(props) {
     return (
         <div>
             <LandingHalfSection page={pageInfo.current} />
+            <ContactFormSection />
         </div>
     );
 }
