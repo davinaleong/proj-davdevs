@@ -84,7 +84,11 @@ class App extends React.Component {
           getPageInfo={this.getPageInfo} />;
 
       case this.props.states.CONTACT:
-        return <ContactPage />;
+        return <ContactPage
+          page={this.state.page}
+          site={this.props.site}
+          gotoPage={this.gotoPage}
+          getPageInfo={this.getPageInfo} />;
 
       default:
         return <NotFoundPage

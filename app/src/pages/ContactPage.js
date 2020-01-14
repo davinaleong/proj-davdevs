@@ -1,9 +1,15 @@
 import React from 'react';
 
+import LandingHalfSection from './../sections/LandingHalfSection';
+
 function ContactPage(props) {
+    const pageInfo = {
+        current: props.getPageInfo(props.page.current),
+        previous: props.getPageInfo(props.page.previous)
+    };
     return (
         <div>
-            <h1>Contact Page</h1>
+            <LandingHalfSection page={pageInfo.current} />
         </div>
     );
 }
