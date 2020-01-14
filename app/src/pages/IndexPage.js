@@ -13,7 +13,7 @@ function IndexPage(props) {
                 renderAsset={props.renderAsset} />
             <WorkSection
                 site={props.site}
-                pages={props.pages}
+                states={props.states}
                 renderAsset={props.renderAsset}
                 renderSkills={props.renderSkills}
                 gotoPage={props.gotoPage} />
