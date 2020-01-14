@@ -135,10 +135,6 @@ class App extends React.Component {
             items={this.props.items}
             gotoPage={this.gotoPage}
             showModal={this.showModal} />
-
-          <button type="button" onClick={() => {
-            console.log(this.getPageInfo(this.state.page.current));
-          }}>Test</button>
   
           {this.renderPage(this.state.page.current)}
         </main>

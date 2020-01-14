@@ -7,7 +7,7 @@ import BackButton from './../buttons/BackButton';
 function SkillsPage(props) {
     const pageInfo = {
         current: props.getPageInfo(props.page.current),
-        previous: props.getPageInfo(props.page.current)
+        previous: props.getPageInfo(props.page.previous)
     };
     return (
         <div>
@@ -15,7 +15,7 @@ function SkillsPage(props) {
             <SkillsSection
                 site={props.site}
                 renderSkills={props.renderSkills} />
-            <BackButton page={pageInfo.previous} gotoPage={props.gotoPage}/>
+            <BackButton page={props.page} gotoPage={props.gotoPage}/>
         </div>
     );
 }
