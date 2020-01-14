@@ -19,8 +19,8 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.pages.SKILLS, // TODO: Back to index
-        previous: this.props.pages.SKILLS
+        current: this.props.pages.INDEX, // TODO: Back to index
+        previous: this.props.pages.INDEX
       },
       modal: false
     };
@@ -44,6 +44,7 @@ class App extends React.Component {
   }
 
   gotoPage = (page) => {
+    console.log('gotoPage', page);
     const previousPage = this.state.page.current;
     this.setState({
       page: {
@@ -54,8 +55,8 @@ class App extends React.Component {
   }
 
   renderPage = (page) => {
-    switch(page) {
-      case this.props.pages.INDEX:
+    switch(page.name) {
+      case this.props.pages.INDEX.name:
         return <IndexPage
           site={this.props.site}
           pages={this.props.pages}
@@ -64,20 +65,20 @@ class App extends React.Component {
           renderSkills={this.renderSkills}
           gotoPage={this.gotoPage} />;
       
-      case this.props.pages.PROJECTS:
+      case this.props.pages.PROJECTS.name:
         return <ProjectsPage />;
 
-      case this.props.pages.PROJECT_ITEM:
+      case this.props.pages.PROJECT_ITEM.name:
         return <ProjectItemPage />;
 
-      case this.props.pages.SKILLS:
+      case this.props.pages.SKILLS.name:
         return <SkillsPage
           site={this.props.site}
-          page={this.state.page.current}
+          page={this.state.page}
           renderSkills={this.renderSkills}
           gotoPage={this.gotoPage} />;
 
-      case this.props.pages.CONTACT:
+      case this.props.pages.CONTACT.name:
         return <ContactPage />;
 
       default:
@@ -89,7 +90,7 @@ class App extends React.Component {
     return this.props.site.assets[type] + filename;
   }
 
-  renderSkills = (skills, separator, arrayType) => {
+  renderSkills = (skills, separator, arrayType, keyPrefix) => {
     let joined = '';
     switch(arrayType) {
       case this.props.arrayTypes['1d']:
