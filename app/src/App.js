@@ -20,7 +20,7 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.PROJECTS, // TODO: set back to 'INDEX'
+        current: this.props.states.INDEX, // TODO: set back to 'INDEX'
         previous: this.props.states.INDEX
       },
       modal: false
@@ -74,6 +74,7 @@ class App extends React.Component {
           page={this.state.page}
           site={this.props.site}
           projects={this.props.projects}
+          renderAsset={this.renderAsset}
           gotoPage={this.gotoPage}
           getPageInfo={this.getPageInfo} />;
 

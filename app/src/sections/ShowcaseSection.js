@@ -25,7 +25,7 @@ function ShowcaseSection(props) {
     });
 
     const cards = [];
-    const limit = props.limit ? props.limit : projects.length - 1;
+    const limit = props.limit ? props.limit : projects.length;
 
     for(let i = 0; i < limit; ++i) {
         cards.push(
