@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LandingHalfSection from './../sections/LandingHalfSection';
+
 function NotFoundPage(props) {
     return (
         <div>

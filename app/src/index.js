@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import states from './data/states';
 import site from './data/site';
 import pages from './data/pages';
 import items from './data/items';
@@ -17,6 +18,7 @@ const arrayTypes = {
 
 ReactDOM.render(
     <App
+        states={states}
         site={site}
         pages={pages}
         items={items}

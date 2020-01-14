@@ -19,8 +19,8 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.pages.INDEX, // TODO: Back to index
-        previous: this.props.pages.INDEX
+        current: this.props.states.INDEX, // TODO: Back to index
+        previous: this.props.states.INDEX
       },
       modal: false
     };
@@ -43,20 +43,23 @@ class App extends React.Component {
     return lines;
   }
 
-  gotoPage = (page) => {
-    console.log('gotoPage', page);
+  gotoPage = (state) => {
     const previousPage = this.state.page.current;
     this.setState({
       page: {
-        current: page,
+        current: state,
         previous: previousPage
       }
     });
   }
 
-  renderPage = (page) => {
-    switch(page.name) {
-      case this.props.pages.INDEX.name:
+  getPageInfo = (state) => {
+    return this.props.pages[state];
+  }
+
+  renderPage = (state) => {
+    switch(state) {
+      case this.props.states.INDEX:
         return <IndexPage
           site={this.props.site}
           pages={this.props.pages}
@@ -65,20 +68,21 @@ class App extends React.Component {
           renderSkills={this.renderSkills}
           gotoPage={this.gotoPage} />;
       
-      case this.props.pages.PROJECTS.name:
+      case this.props.states.PROJECTS:
         return <ProjectsPage />;
 
-      case this.props.pages.PROJECT_ITEM.name:
+      case this.props.states.PROJECT_ITEM:
         return <ProjectItemPage />;
 
-      case this.props.pages.SKILLS.name:
+      case this.props.states.SKILLS:
         return <SkillsPage
-          site={this.props.site}
           page={this.state.page}
+          site={this.props.site}
           renderSkills={this.renderSkills}
-          gotoPage={this.gotoPage} />;
+          gotoPage={this.gotoPage}
+          getPageInfo={this.getPageInfo} />;
 
-      case this.props.pages.CONTACT.name:
+      case this.props.states.CONTACT:
         return <ContactPage />;
 
       default:
@@ -90,7 +94,7 @@ class App extends React.Component {
     return this.props.site.assets[type] + filename;
   }
 
-  renderSkills = (skills, separator, arrayType, keyPrefix) => {
+  renderSkills = (skills, separator, arrayType) => {
     let joined = '';
     switch(arrayType) {
       case this.props.arrayTypes['1d']:
@@ -126,10 +130,15 @@ class App extends React.Component {
       <div className="App">
         <main>
           <Header
-            pages={this.props.pages}
+            pages={this.props.pages} // TODO: Remove
+            states={this.props.states}
             items={this.props.items}
             gotoPage={this.gotoPage}
             showModal={this.showModal} />
+
+          <button type="button" onClick={() => {
+            console.log(this.getPageInfo(this.state.page.current));
+          }}>Test</button>
   
           {this.renderPage(this.state.page.current)}
         </main>

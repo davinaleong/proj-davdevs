@@ -1,4 +1,4 @@
-import pages from './pages';
+import states from './states';
 
 const links = [
     {
@@ -7,19 +7,19 @@ const links = [
     }, {
         "title": "Home",
         "icon": "fal fa-home",
-        "page": pages.INDEX
+        "page": states.INDEX
     }, {
         "title": "Projects",
         "icon": "fal fa-laptop-code",
-        "page": pages.PROJECTS
+        "page": states.PROJECTS
     }, {
         "title": "Skills",
         "icon": "fal fa-code",
-        "page": pages.SKILLS
+        "page": states.SKILLS
     }, {
         "title": "Contact",
         "icon": "fal fa-mobile",
-        "page": pages.CONTACT
+        "page": states.CONTACT
     }
 ];
 

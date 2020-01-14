@@ -9,7 +9,7 @@ function Header(props) {
             <NavItem
                 key={'n'+index}
                 item={item}
-                pages={props.pages}
+                states={props.states}
                 gotoPage={props.gotoPage} />
         );
     });
