@@ -20,7 +20,7 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.INDEX, // TODO: Back to index
+        current: this.props.states.INDEX,
         previous: this.props.states.INDEX
       },
       modal: false
