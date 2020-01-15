@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Blockquote from './../loose/Blockquote';
+import TechStack from './../loose/TechStack';
 
 function ProjectContentSection(props) {
     return (
@@ -9,14 +10,14 @@ function ProjectContentSection(props) {
 
             <Blockquote text={props.project.overview} breakLines={props.breakLines} />
 
+            <TechStack techStack={props.project.techStack} renderItems={props.renderItems} />
+
             <div className="mb-3"><img src={props.renderAsset('image', props.project.image)} alt={props.project.name} /></div>
 
             <p>{props.project.category}</p>
-            <p><small>{props.project.date}</small></p>
-
-            {/* TODO: Blockquote */}
-            {/* TODO: Tech stack */}
-            {/* TODO: Write up */}
+            <p className="mb-3"><small>{props.project.date}</small></p>
+            
+            <div className="text-left">{props.breakLines(props.project.writeUp)}</div>
         </section>
     );
 }

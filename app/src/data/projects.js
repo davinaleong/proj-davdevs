@@ -11,8 +11,10 @@ const projects = [
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -26,8 +28,10 @@ const projects = [
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -41,8 +45,10 @@ const projects = [
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -56,8 +62,10 @@ const projects = [
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -71,8 +79,10 @@ const projects = [
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -86,8 +96,10 @@ const projects = [
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -101,8 +113,10 @@ const projects = [
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     },
@@ -116,8 +130,10 @@ const projects = [
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
-            "HTML",
-            "CSS"
+            {
+                "name": "Frontend",
+                "items": ["HTML", "CSS"]
+            }
         ],
         "writeUp": "Hello\r\n\r\nWorld"
     }

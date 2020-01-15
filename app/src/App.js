@@ -98,6 +98,7 @@ class App extends React.Component {
           project={this.state.project}
           breakLines={this.breakLines}
           renderAsset={this.renderAsset}
+          renderItems={this.renderItems}
           getPageInfo={this.getPageInfo} />;
 
       case this.props.states.SKILLS:
