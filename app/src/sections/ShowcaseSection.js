@@ -33,7 +33,6 @@ function ShowcaseSection(props) {
                 key={'p'+i}
                 project={projects[i]}
                 renderAsset={props.renderAsset}
-                gotoPage={props.gotoPage}
                 gotoProjectItem={props.gotoProjectItem} />
         );
     }

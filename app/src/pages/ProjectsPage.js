@@ -11,7 +11,10 @@ function ProjectsPage(props) {
     return (
         <div>
             <LandingHalfSection page={pageInfo.current} />
-            <ShowcaseSection projects={props.projects} renderAsset={props.renderAsset} />
+            <ShowcaseSection
+                projects={props.projects}
+                renderAsset={props.renderAsset}
+                gotoProjectItem={props.gotoProjectItem} />
         </div>
     );
 }

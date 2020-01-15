@@ -21,7 +21,6 @@ function IndexPage(props) {
                 featured={true}
                 limit={4}
                 renderAsset={props.renderAsset}
-                gotoPage={props.gotoPage}
                 gotoProjectItem={props.gotoProjectItem} />
         </div>
     );
