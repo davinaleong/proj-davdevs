@@ -21,10 +21,10 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.PROJECT_ITEM, // TODO: set back to 'INDEX'
+        current: this.props.states.INDEX,
         previous: this.props.states.INDEX
       },
-      project: this.props.projects[0], // TODO: set back to null
+      project: null,
       modal: false
     };
   }
