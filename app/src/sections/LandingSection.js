@@ -13,10 +13,10 @@ function LandingSection(props) {
             </div>
             <div className="landing-middle">
                 <div className="landing-cell-left">
-                    <img src={props.renderAsset('image', 'index-01.svg')}           width="160px"/>
+                    <img src={props.renderAsset('site', 'index-01.svg')}           width="160px"/>
                 </div>
                 <div className="landing-cell-right">
-                    <img src={props.renderAsset('image', 'index-02.svg')}
+                    <img src={props.renderAsset('site', 'index-02.svg')}
                         width="160px"/>
                 </div>
             </div>

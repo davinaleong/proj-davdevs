@@ -5,7 +5,8 @@ const site = {
     "dateFormat": "DD MMM YYYY",
     "assets": {
         "icon": "./icons/",
-        "image": "./images/"
+        "image": "./images/",
+        "site": "./site/"
     },
     "personal": {
         "email": "davina.leong@outlook.com",
