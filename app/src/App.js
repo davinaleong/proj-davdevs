@@ -45,12 +45,6 @@ class App extends React.Component {
     return lines;
   }
 
-  selectProject = (name) => {
-    this.setState({
-      project: this.props.projects.filter(project => project.name === name)[0]
-    });
-  }
-
   gotoPage = (state) => {
     const previousPage = this.state.page.current;
     this.setState({
@@ -58,6 +52,17 @@ class App extends React.Component {
         current: state,
         previous: previousPage
       }
+    });
+  }
+
+  gotoProjectItem = (uuid) => {
+    const previousPage = this.state.page.current;
+    this.setState({
+      page: {
+        current: this.props.states.PROJECT_ITEM,
+        previous: previousPage
+      },
+      project: this.props.projects.filter(project => project.uuid === uuid)[0]
     });
   }
 
@@ -75,7 +80,7 @@ class App extends React.Component {
           renderAsset={this.renderAsset}
           renderSkills={this.renderSkills}
           gotoPage={this.gotoPage}
-          selectProject={this.selectProject} />;
+          gotoProjectItem={this.gotoProjectItem} />;
       
       case this.props.states.PROJECTS:
         return <ProjectsPage
@@ -85,7 +90,7 @@ class App extends React.Component {
           renderAsset={this.renderAsset}
           gotoPage={this.gotoPage}
           getPageInfo={this.getPageInfo}
-          selectProject={this.selectProject} />;
+          gotoProjectItem={this.gotoProjectItem} />;
 
       case this.props.states.PROJECT_ITEM:
         return <ProjectItemPage

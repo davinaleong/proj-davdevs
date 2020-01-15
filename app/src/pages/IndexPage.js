@@ -20,7 +20,9 @@ function IndexPage(props) {
                 projects={props.projects}
                 featured={true}
                 limit={4}
-                renderAsset={props.renderAsset} />
+                renderAsset={props.renderAsset}
+                gotoPage={props.gotoPage}
+                gotoProjectItem={props.gotoProjectItem} />
         </div>
     );
 }

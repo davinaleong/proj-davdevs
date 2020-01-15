@@ -32,7 +32,9 @@ function ShowcaseSection(props) {
             <Card
                 key={'p'+i}
                 project={projects[i]}
-                renderAsset={props.renderAsset} />
+                renderAsset={props.renderAsset}
+                gotoPage={props.gotoPage}
+                gotoProjectItem={props.gotoProjectItem} />
         );
     }
 
