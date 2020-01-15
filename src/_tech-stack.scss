@@ -1,0 +1,9 @@
+div.tech-stack {
+    @extend .p-2;
+    background-color: color('gray', '800');
+    box-shadow: $box-shadow;
+}
+
+div.tech-stack div {
+    @extend .ml-2;
+}

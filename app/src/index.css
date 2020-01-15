@@ -192,6 +192,12 @@ blockquote {
   border-radius: 1rem;
 }
 
+div.tech-stack {
+  background-color: #424242;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
 form table {
   border-collapse: collapse;
   width: 100%;
@@ -573,11 +579,11 @@ form table tbody tr td textarea {
   margin-bottom: 0.5rem;
 }
 
-.ml-2 {
+.ml-2, div.tech-stack div {
   margin-left: 0.5rem;
 }
 
-.p-2 {
+.p-2, div.tech-stack {
   padding: 0.5rem;
 }
 
