@@ -15,7 +15,7 @@ function ProjectContentSection(props) {
             <div className="mb-3"><img src={props.renderAsset('image', props.project.image)} alt={props.project.name} /></div>
 
             <p>{props.project.category}</p>
-            <p className="mb-3"><small>{props.project.date}</small></p>
+            <p className="mb-3"><small>{props.renderDate(props.project.date)}</small></p>
             
             <div className="text-left">{props.breakLines(props.project.writeUp)}</div>
         </section>

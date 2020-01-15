@@ -2,6 +2,7 @@ const site = {
     "title": "Dav / Devs",
     "occupation": "web developer",
     "tagline": "just keep learning...",
+    "dateFormat": "DD MMM YYYY",
     "assets": {
         "icon": "./icons/",
         "image": "./images/"

@@ -15,6 +15,7 @@ function ProjectItemPage(props) {
             <ProjectContentSection
                 project={props.project}
                 breakLines={props.breakLines}
+                renderDate={props.renderDate}
                 renderAsset={props.renderAsset}
                 renderItems={props.renderItems} />
         </div>

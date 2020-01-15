@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import Header from './header/Header';
 import IndexPage from './pages/IndexPage';
@@ -97,6 +98,7 @@ class App extends React.Component {
           page={this.state.page}
           project={this.state.project}
           breakLines={this.breakLines}
+          renderDate={this.renderDate}
           renderAsset={this.renderAsset}
           renderItems={this.renderItems}
           getPageInfo={this.getPageInfo} />;
@@ -121,6 +123,10 @@ class App extends React.Component {
           page={this.state.page}
           gotoPage={this.gotoPAge} />;
     }
+  }
+
+  renderDate = (date) => {
+    return moment(date).format(this.props.site.dateFormat);
   }
 
   renderAsset = (type, filename) => {
