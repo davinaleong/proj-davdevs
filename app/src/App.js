@@ -78,7 +78,7 @@ class App extends React.Component {
           states={this.props.states}
           projects={this.props.projects}
           renderAsset={this.renderAsset}
-          renderSkills={this.renderSkills}
+          renderItems={this.renderItems}
           gotoPage={this.gotoPage}
           gotoProjectItem={this.gotoProjectItem} />;
       
@@ -103,7 +103,7 @@ class App extends React.Component {
         return <SkillsPage
           page={this.state.page}
           site={this.props.site}
-          renderSkills={this.renderSkills}
+          renderItems={this.renderItems}
           gotoPage={this.gotoPage}
           getPageInfo={this.getPageInfo} />;
 
@@ -125,18 +125,18 @@ class App extends React.Component {
     return this.props.site.assets[type] + filename;
   }
 
-  renderSkills = (skills, separator, arrayType) => {
+  renderItems = (items, separator, arrayType) => {
     let joined = '';
     switch(arrayType) {
       case this.props.arrayTypes['1d']:
-        skills.forEach((skill, i) => {
-          joined += i < skills.length - 1 ? skill + separator : skill;
+        items.forEach((item, i) => {
+          joined += i < items.length - 1 ? item + separator : item;
         });
         break;
 
       case this.props.arrayTypes['2d']:
         joined = [];
-        skills.forEach((row, i) => {
+        items.forEach((row, i) => {
           let joinedSnippet = '';
 
           row.forEach((column, j) => {

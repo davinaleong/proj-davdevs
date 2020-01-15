@@ -13,7 +13,7 @@ function SkillsPage(props) {
             <LandingHalfSection page={pageInfo.current} />
             <SkillsSection
                 site={props.site}
-                renderSkills={props.renderSkills} />
+                renderItems={props.renderItems} />
         </div>
     );
 }

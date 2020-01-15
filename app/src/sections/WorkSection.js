@@ -7,7 +7,7 @@ function WorkSection(props) {
             <div className="work-cell-design">
                 <h3 className="h3 text-blue-gray mt-5 mb-3">Design</h3>
                 <div className="text-yellow mb-3"><i className="fal fa-drafting-compass fa-9x"></i></div>
-                <p className="mb-3">{props.renderSkills(props.site.skills.design.summarised, ' / ', '1d')}</p>
+                <p className="mb-3">{props.renderItems(props.site.skills.design.summarised, ' / ', '1d')}</p>
                 <p>
                     <button className="link link-orange" type="button" onClick={() => {props.gotoPage(props.states.SKILLS)}}>View more</button>
                 </p>
@@ -15,7 +15,7 @@ function WorkSection(props) {
             <div className="work-cell-develop">
                 <h3 className="h3 text-blue-gray mt-5 mb-3">Develop</h3>
                 <div className="text-yellow mb-3"><i className="fal fa-laptop-code fa-9x"></i></div>
-                <p className="mb-3">{props.renderSkills(props.site.skills.develop.summarised, ' / ', '1d')}</p>
+                <p className="mb-3">{props.renderItems(props.site.skills.develop.summarised, ' / ', '1d')}</p>
                 <p>
                     <button className="link link-orange" type="button" onClick={() => {props.gotoPage(props.states.SKILLS)}}>View more</button>
                 </p>

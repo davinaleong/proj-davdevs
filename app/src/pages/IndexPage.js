@@ -14,7 +14,7 @@ function IndexPage(props) {
                 site={props.site}
                 states={props.states}
                 renderAsset={props.renderAsset}
-                renderSkills={props.renderSkills}
+                renderItems={props.renderItems}
                 gotoPage={props.gotoPage} />
             <ShowcaseSection
                 projects={props.projects}

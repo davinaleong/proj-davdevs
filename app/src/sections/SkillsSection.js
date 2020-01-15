@@ -7,12 +7,12 @@ function SkillsSection(props) {
 
             <h3 className="text-blue-gray mb-1">Design</h3>
             <p className="design mb-3">
-                {props.renderSkills(props.site.skills.design.full, ' / ', '2d')}
+                {props.renderItems(props.site.skills.design.full, ' / ', '2d')}
             </p>
 
             <h3 className="text-blue-gray mb-1">Develop</h3>
             <p className="design mb-3">
-                {props.renderSkills(props.site.skills.develop.full, ' / ', '2d')}
+                {props.renderItems(props.site.skills.develop.full, ' / ', '2d')}
             </p>
         </section>
     );
