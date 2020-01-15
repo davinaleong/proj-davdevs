@@ -45,6 +45,12 @@ class App extends React.Component {
     return lines;
   }
 
+  selectProject = (name) => {
+    this.setState({
+      project: this.props.projects.filter(project => project.name === name)[0]
+    });
+  }
+
   gotoPage = (state) => {
     const previousPage = this.state.page.current;
     this.setState({
@@ -68,7 +74,8 @@ class App extends React.Component {
           projects={this.props.projects}
           renderAsset={this.renderAsset}
           renderSkills={this.renderSkills}
-          gotoPage={this.gotoPage} />;
+          gotoPage={this.gotoPage}
+          selectProject={this.selectProject} />;
       
       case this.props.states.PROJECTS:
         return <ProjectsPage
@@ -77,10 +84,13 @@ class App extends React.Component {
           projects={this.props.projects}
           renderAsset={this.renderAsset}
           gotoPage={this.gotoPage}
-          getPageInfo={this.getPageInfo} />;
+          getPageInfo={this.getPageInfo}
+          selectProject={this.selectProject} />;
 
       case this.props.states.PROJECT_ITEM:
-        return <ProjectItemPage />;
+        return <ProjectItemPage
+          page={this.state.page}
+          getPageInfo={this.getPageInfo} />;
 
       case this.props.states.SKILLS:
         return <SkillsPage
@@ -145,7 +155,7 @@ class App extends React.Component {
     if (this.state.page.current == this.props.states.INDEX) {
       backButton = null;
     }
-    
+
     return (
       <div className="App">
         <main>
