@@ -7,7 +7,7 @@ const projects = [
         "name": "Project Title 1",
         "category": "Project Category",
         "image": "placeholder-01.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -24,7 +24,7 @@ const projects = [
         "name": "Project Title 2",
         "category": "Project Category",
         "image": "placeholder-01.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -41,7 +41,7 @@ const projects = [
         "name": "Project Title 4",
         "category": "Project Category",
         "image": "placeholder-01.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -58,7 +58,7 @@ const projects = [
         "name": "Project Title 3",
         "category": "Project Category",
         "image": "placeholder-01.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": true,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -75,7 +75,7 @@ const projects = [
         "name": "Project Title 5",
         "category": "Project Category",
         "image": "placeholder-01.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -92,7 +92,7 @@ const projects = [
         "name": "Project Title 6",
         "category": "Project Category",
         "image": "placeholder-02.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -109,7 +109,7 @@ const projects = [
         "name": "Project Title 7",
         "category": "Project Category",
         "image": "placeholder-02.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
@@ -126,7 +126,7 @@ const projects = [
         "name": "Project Title 8",
         "category": "Project Category",
         "image": "placeholder-02.jpg",
-        "link": "./project-item.html",
+        "link": "http://www.bing.com",
         "featured": false,
         "overview": "Lorem ipsum",
         "techStack": [
