@@ -23,6 +23,7 @@ class App extends React.Component {
         current: this.props.states.INDEX, // TODO: set back to 'INDEX'
         previous: this.props.states.INDEX
       },
+      project: null,
       modal: false
     };
   }
@@ -139,6 +140,10 @@ class App extends React.Component {
   }
 
   render() {
+    let backButton = <BackButton page={this.state.page} gotoPage={this.gotoPage}/>;
+    if (this.state.page.current == this.props.states.INDEX) {
+      backButton = null;
+    }
     return (
       <div className="App">
         <main>
@@ -151,7 +156,7 @@ class App extends React.Component {
   
           {this.renderPage(this.state.page.current)}
 
-          <BackButton page={this.state.page} gotoPage={this.gotoPage}/>
+          {backButton}
         </main>
 
         <Footer site={this.props.site} />
