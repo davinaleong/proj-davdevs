@@ -87,13 +87,18 @@ section.work div.work-cell-develop {
 
 /* Project Showcase */
 section.home-showcase {
-    @extend section.showcase;
+    height: auto;
+    padding: spacer('2');
     background-color: color('gray', '800');
 }
 
 section.showcase {
     height: auto;
     padding: spacer('2');
+}
+
+section.featured {
+    background-color: color('gray', '800');
 }
 
 /* Other Pages */

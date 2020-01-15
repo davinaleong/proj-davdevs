@@ -37,7 +37,7 @@ function ShowcaseSection(props) {
     }
 
     return (
-        <section className="showcase">
+        <section className={props.featured ? 'showcase featured' : 'showcase'}>
             <h2 className="hidden">What I do Christ Jesus.</h2>
             <div className="cards">{cards}</div>
         </section>

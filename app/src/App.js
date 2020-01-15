@@ -141,9 +141,11 @@ class App extends React.Component {
 
   render() {
     let backButton = <BackButton page={this.state.page} gotoPage={this.gotoPage}/>;
+
     if (this.state.page.current == this.props.states.INDEX) {
       backButton = null;
     }
+    
     return (
       <div className="App">
         <main>

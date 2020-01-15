@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 import LandingSection from './../sections/LandingSection';
 import WorkSection from './../sections/WorkSection';

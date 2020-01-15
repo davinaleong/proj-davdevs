@@ -165,12 +165,18 @@ section.work div.work-cell-develop {
 
 /* Project Showcase */
 section.home-showcase {
+  height: auto;
+  padding: 0.5rem;
   background-color: #424242;
 }
 
-section.showcase, section.home-showcase {
+section.showcase {
   height: auto;
   padding: 0.5rem;
+}
+
+section.featured {
+  background-color: #424242;
 }
 
 /* Other Pages */
