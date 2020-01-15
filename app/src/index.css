@@ -1062,7 +1062,7 @@ div.card div.content {
 
 nav.social {
   position: fixed;
-  top: 40vh;
+  top: 20vh;
   background-color: #ffeb3b;
   -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
