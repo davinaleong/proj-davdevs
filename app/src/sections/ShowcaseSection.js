@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from './../card/Card';
+import Card from '../loose/Card';
 
 function ShowcaseSection(props) {
     let projects = props.projects;
