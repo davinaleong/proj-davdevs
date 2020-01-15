@@ -10,7 +10,9 @@ function ProjectContentSection(props) {
             <p>{props.project.category}</p>
             <p><small>{props.project.date}</small></p>
 
-            //
+            {/* TODO: Blockquote */}
+            {/* TODO: Tech stack */}
+            {/* TODO: Write up */}
         </section>
     );
 }
