@@ -592,7 +592,7 @@ form table tbody tr td textarea {
   padding-right: 0.5rem;
 }
 
-.py-2, blockquote p {
+.py-2, blockquote div.quote {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -767,7 +767,7 @@ form table tbody tr td textarea {
   padding: 2rem;
 }
 
-.px-5, blockquote p {
+.px-5, blockquote div.quote {
   padding-left: 2rem;
   padding-right: 2rem;
 }

@@ -3,7 +3,7 @@ blockquote {
     border-radius: spacer('3');
 }
 
-blockquote p {
+blockquote div.quote {
     @extend .px-5;
     @extend .py-2;
 }
