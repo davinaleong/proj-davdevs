@@ -96,6 +96,7 @@ class App extends React.Component {
         return <ProjectItemPage
           page={this.state.page}
           project={this.state.project}
+          breakLines={this.breakLines}
           renderAsset={this.renderAsset}
           getPageInfo={this.getPageInfo} />;
 

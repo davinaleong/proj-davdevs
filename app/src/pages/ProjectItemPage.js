@@ -14,7 +14,9 @@ function ProjectItemPage(props) {
             <LandingHalfSection page={pageInfo.current} />
             <ProjectContentSection
                 project={props.project}
-                renderAsset={props.renderAsset} />
+                breakLines={props.breakLines}
+                renderAsset={props.renderAsset}
+                renderItems={props.renderItems} />
         </div>
     );
 }

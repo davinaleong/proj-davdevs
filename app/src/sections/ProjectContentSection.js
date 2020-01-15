@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Blockquote from './../loose/Blockquote';
+
 function ProjectContentSection(props) {
     return (
         <section className="project-item mb-3">
             <h2 className="h3 text-blue-gray text-center mb-3">{props.project.name}</h2>
+
+            <Blockquote text={props.project.overview} breakLines={props.breakLines} />
 
             <div className="mb-3"><img src={props.renderAsset('image', props.project.image)} alt={props.project.name} /></div>
 
