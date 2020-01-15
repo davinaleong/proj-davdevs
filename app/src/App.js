@@ -21,7 +21,7 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.INDEX,
+        current: this.props.states.PROJECTS,
         previous: this.props.states.INDEX
       },
       project: null,
@@ -40,7 +40,7 @@ class App extends React.Component {
     const split = string.split(/\r\n/g);
     split.forEach((segment, index) => {
       lines.push(
-        <p key={keyPrefix + index}>{segment}</p>
+        <p key={keyPrefix + index} className="mb-1">{segment}</p>
       );
     });
     return lines;
