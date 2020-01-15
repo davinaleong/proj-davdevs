@@ -187,6 +187,10 @@ section.landing-half div.landing-lower {
   background-color: #ffeb3b;
 }
 
+blockquote {
+  border-radius: 1rem;
+}
+
 form table {
   border-collapse: collapse;
   width: 100%;
@@ -508,7 +512,7 @@ code, .text-monospace {
   margin-left: 0.25rem;
 }
 
-.p-1, form table tbody tr th,
+.p-1, blockquote, form table tbody tr th,
 form table tbody tr td, form table tbody tr td input,
 form table tbody tr td select,
 form table tbody tr td textarea {
@@ -580,7 +584,7 @@ form table tbody tr td textarea {
   padding-right: 0.5rem;
 }
 
-.py-2 {
+.py-2, blockquote p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -755,7 +759,7 @@ form table tbody tr td textarea {
   padding: 2rem;
 }
 
-.px-5 {
+.px-5, blockquote p {
   padding-left: 2rem;
   padding-right: 2rem;
 }

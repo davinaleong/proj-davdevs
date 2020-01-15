@@ -20,10 +20,10 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.INDEX, // TODO: set back to 'INDEX'
+        current: this.props.states.PROJECT_ITEM, // TODO: set back to 'INDEX'
         previous: this.props.states.INDEX
       },
-      project: null,
+      project: this.props.projects[0], // TODO: set back to null
       modal: false
     };
   }
@@ -95,6 +95,8 @@ class App extends React.Component {
       case this.props.states.PROJECT_ITEM:
         return <ProjectItemPage
           page={this.state.page}
+          project={this.state.project}
+          renderAsset={this.renderAsset}
           getPageInfo={this.getPageInfo} />;
 
       case this.props.states.SKILLS:

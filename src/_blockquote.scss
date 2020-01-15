@@ -1,0 +1,9 @@
+blockquote {
+    @extend .p-1;
+    border-radius: spacer('3');
+}
+
+blockquote p {
+    @extend .px-5;
+    @extend .py-2;
+}

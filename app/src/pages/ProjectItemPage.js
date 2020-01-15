@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LandingHalfSection from './../sections/LandingHalfSection';
+import ProjectContentSection from './../sections/ProjectContentSection';
 
 function ProjectItemPage(props) {
     const pageInfo = {
@@ -11,6 +12,9 @@ function ProjectItemPage(props) {
     return (
         <div>
             <LandingHalfSection page={pageInfo.current} />
+            <ProjectContentSection
+                project={props.project}
+                renderAsset={props.renderAsset} />
         </div>
     );
 }
