@@ -5,7 +5,7 @@ import Card from '../loose/Card';
 function ShowcaseSection(props) {
     let projects = props.projects;
     if (props.featured) {
-        projects = props.projects.filter(projects => projects.featured);
+        projects = props.projects.filter(projects => projects.featured === true);
     }
 
     projects.sort((a, b) => {
@@ -25,7 +25,10 @@ function ShowcaseSection(props) {
     });
 
     const cards = [];
-    const limit = props.limit ? props.limit : projects.length;
+    let limit = projects.length;
+    if (props.limit && props.limit < projects.length) {
+        limit = props.limit;
+    }
 
     for(let i = 0; i < limit; ++i) {
         cards.push(

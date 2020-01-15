@@ -175,7 +175,7 @@ class App extends React.Component {
       <div className="App">
         <main>
           <Header
-            pages={this.props.pages} // TODO: Remove
+            pages={this.props.pages}
             states={this.props.states}
             items={this.props.items}
             gotoPage={this.gotoPage}
