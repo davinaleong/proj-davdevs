@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-markdown';
 
 import Blockquote from './../loose/Blockquote';
 import TechStack from './../loose/TechStack';
@@ -9,6 +10,9 @@ function ProjectContentSection(props) {
         <section className="project-item mb-3">
             <h2 className="h3 text-blue-gray text-center mb-3">{props.project.name}</h2>
 
+            <p className="text-center">{props.project.category}</p>
+            <p className="text-center mb-3"><small>{props.renderDate(props.project.date)}</small></p>
+
             {props.project.link ? <ToProjectDemoButton project={props.project} /> : null}
 
             <Blockquote text={props.project.overview} breakLines={props.breakLines} />
@@ -17,12 +21,9 @@ function ProjectContentSection(props) {
 
             <div className="mb-3"><img src={props.renderAsset('image', props.project.image)} alt={props.project.name} /></div>
 
-            <p>{props.project.category}</p>
-            <p className="mb-3"><small>{props.renderDate(props.project.date)}</small></p>
-
             {props.project.link ? <ToProjectDemoButton project={props.project} /> : null}
             
-            <div className="text-left">{props.breakLines(props.project.writeUp)}</div>
+            <Markdown source={props.project.writeUp} />
         </section>
     );
 }

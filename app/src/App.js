@@ -21,7 +21,7 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.PROJECTS,
+        current: this.props.states.INDEX,
         previous: this.props.states.INDEX
       },
       project: null,

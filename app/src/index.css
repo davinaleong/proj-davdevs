@@ -11,7 +11,7 @@
 }
 
 html, body {
-  font-family: Source Code Pro, Courier New, monospace;
+  font-family: Source Sans Pro, Arial, sans-serif;
   color: #fff;
   background-color: #212121;
   min-height: 100vh;
@@ -512,7 +512,7 @@ code, .text-monospace {
   margin-right: 0.25rem;
 }
 
-.mb-1 {
+.mb-1, p {
   margin-bottom: 0.25rem;
 }
 
@@ -1024,7 +1024,7 @@ button.link-orange:hover {
 }
 
 button.bg-orange {
-  color: #000;
+  color: #fff;
 }
 
 button.bg-orange:hover {

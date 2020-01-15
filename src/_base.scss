@@ -11,7 +11,7 @@
 
 html, body {
     font-size: size('base');
-    font-family: family('monospace');
+    font-family: family('body');
     color: color('white', 'base');
     background-color: color('gray', '900');
     min-height: 100vh;
@@ -28,4 +28,8 @@ img.shadow {
 
 .hidden {
     display: none;
+}
+
+p {
+    @extend .mb-1;
 }
