@@ -1,9 +1,8 @@
 import React from 'react';
 
 function Copyright(props) {
-    const now = new Date();
     return (
-        <p>{props.site.personal.copyright} {now.getFullYear()}</p>
+        <p>{props.copyright.name} &copy; {props.copyright.author}, {props.copyright.year}</p>
     );
 }
 

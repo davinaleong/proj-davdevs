@@ -9,8 +9,11 @@ const site = {
     },
     "personal": {
         "email": "davina.leong@outlook.com",
-        // TODO: Refactor this
-        "copyright": "davdavs &copy; Davina Leong"
+        "copyright": {
+            "name": "davdevs",
+            "author": "Davina Leong",
+            "year": "2020"
+        }
     },
     "skills": {
         "design": {

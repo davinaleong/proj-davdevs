@@ -21,7 +21,7 @@ function Footer(props) {
                 </li>
                 {items}
             </ul>
-            <Copyright site={props.site} />
+            <Copyright copyright={props.site.personal.copyright} />
         </footer>
     );
 }
