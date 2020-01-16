@@ -347,10 +347,12 @@ a.text-orange:hover {
 
 /* Text Mutations */
 strong, b, .text-bold {
+  color: #FBC02D;
   font-weight: bold;
 }
 
 em, .text-italic {
+  color: #FBC02D;
   font-style: italic;
 }
 
@@ -359,6 +361,7 @@ small, .text-small {
 }
 
 code, .text-monospace {
+  color: #FBC02D;
   font-family: Source Code Pro, Courier New, monospace;
 }
 
