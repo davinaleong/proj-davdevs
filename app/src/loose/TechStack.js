@@ -6,7 +6,7 @@ function TechStack(props) {
         stacks.push(
             <div key={'t'+index} className="mb-2">
                 <h4 className="h6">{category.name}</h4>
-                <p>{props.renderItems(category.items, ', ', '1d')}</p>
+                <p className="text-monospace">{props.renderItems(category.items, ', ', '1d')}</p>
             </div>
         );
     });
