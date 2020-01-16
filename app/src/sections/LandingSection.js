@@ -7,8 +7,8 @@ function LandingSection(props) {
                 <div className="landing-content text-center">
                     <img className="logo mb-3" src={props.renderAsset('icon', 'logo-black.svg')} />
                     <h1 className="mb-2">{props.site.title}</h1>
-                    <p className="text-monospace mb-2">{props.site.occupation}</p>
-                    <p className="text-monospace text-italic"><small>{props.site.tagline}</small></p>
+                    <p className="text-black mb-2">{props.site.occupation}</p>
+                    <p className="text-black text-italic"><small>{props.site.tagline}</small></p>
                 </div>
             </div>
             <div className="landing-middle">
