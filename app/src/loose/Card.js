@@ -5,7 +5,7 @@ function Card(props) {
         <div className="card">
             <img src={props.renderAsset('image', props.project.image)} alt={props.project.name} />
             <div className="content">
-                <h3 className="h5 mb-1">
+                <h3 className="h5 text-left mb-1">
                     <button className="link link-orange" type="button" onClick={() => {props.gotoProjectItem(props.project.uuid)}}>
                         {props.project.name}
                     </button>
