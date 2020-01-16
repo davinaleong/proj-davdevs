@@ -2,3 +2,4 @@
 Dav/devs website updated for 2020
 
 TODO: Project-List
+TODO: Add Project Category icons
