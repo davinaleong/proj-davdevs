@@ -11,7 +11,7 @@ const site = {
     "personal": {
         "email": "davina.leong@outlook.com",
         "copyright": {
-            "name": "davdevs",
+            "name": "davina-devs",
             "author": "Davina Leong",
             "year": "2020"
         }
