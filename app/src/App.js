@@ -29,10 +29,6 @@ class App extends React.Component {
     };
   }
 
-  getCategory = (category) => {
-    return this.props.categories.filter(category => category.name === category);
-  }
-
   showModal = (show) => {
     this.setState({
       modal: show
@@ -48,6 +44,10 @@ class App extends React.Component {
       );
     });
     return lines;
+  }
+
+  getCategory = (type) => {
+    return this.props.categories.filter(category => category.name === type)[0];
   }
 
   gotoPage = (state) => {
@@ -82,6 +82,7 @@ class App extends React.Component {
           site={this.props.site}
           states={this.props.states}
           projects={this.props.projects}
+          getCategory={this.getCategory}
           renderAsset={this.renderAsset}
           renderItems={this.renderItems}
           gotoPage={this.gotoPage}
@@ -92,6 +93,7 @@ class App extends React.Component {
           page={this.state.page}
           site={this.props.site}
           projects={this.props.projects}
+          getCategory={this.getCategory}
           renderAsset={this.renderAsset}
           gotoPage={this.gotoPage}
           getPageInfo={this.getPageInfo}
@@ -102,6 +104,7 @@ class App extends React.Component {
           page={this.state.page}
           project={this.state.project}
           breakLines={this.breakLines}
+          getCategory={this.getCategory}
           renderDate={this.renderDate}
           renderAsset={this.renderAsset}
           renderItems={this.renderItems}

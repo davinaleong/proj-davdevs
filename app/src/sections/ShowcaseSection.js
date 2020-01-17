@@ -35,6 +35,7 @@ function ShowcaseSection(props) {
             <Card
                 key={'p'+i}
                 project={projects[i]}
+                getCategory={props.getCategory}
                 renderAsset={props.renderAsset}
                 gotoProjectItem={props.gotoProjectItem} />
         );

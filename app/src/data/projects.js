@@ -5,7 +5,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-15",
         "name": "Color Palettes",
-        "category": "Static Website",
+        "category": {
+            "name": "Static Website",
+            "type": "HTML"
+        },
         "image": "color-palettes.png",
         "link": "https://davinaleong.github.io/proj-color-palette/",
         "featured": false,
@@ -25,7 +28,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-15",
         "name": "Proverbs Everyday",
-        "category": "React App",
+        "category": {
+            "name": "React App",
+            "type": "React"
+        },
         "image": "proverbs-everyday.png",
         "link": "https://proverbs-everyday.netlify.com/",
         "featured": true,
@@ -48,7 +54,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-15",
         "name": "Bootstrap 4 Admin Dashboard Template",
-        "category": "Bootstrap 4 Admin-Dashboard Template",
+        "category": {
+            "name": "Bootstrap 4 Admin-Dashboard Template",
+            "type": "Bootstrap"
+        },
         "image": "b4-admin-template.png",
         "link": "https://davinaleong.github.io/proj-b4-admin-template/",
         "featured": true,
@@ -68,7 +77,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-16",
         "name": "Comphanny Template",
-        "category": "Bootstrap 4 Website Template",
+        "category": {
+            "name": "Bootstrap 4 Website Template",
+            "type": "Bootstrap"
+        },
         "image": "comphanny-template.png",
         "link": "https://davinaleong.github.io/proj-comphanny-template/",
         "featured": true,
@@ -85,7 +97,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-16",
         "name": "Dav / Devs",
-        "category": "React App",
+        "category": {
+            "name": "React App",
+            "type": "React"
+        },
         "image": "dav-devs.png",
         "link": "https://davina-devs.com/",
         "featured": true,
@@ -108,7 +123,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-15",
         "name": "Color Palettes",
-        "category": "Static Website",
+        "category": {
+            "name": "Static Website",
+            "type": "HTML"
+        },
         "image": "color-palettes.png",
         "link": "https://davinaleong.github.io/proj-color-palette/",
         "featured": false,
@@ -128,7 +146,10 @@ const projects = [
         "uuid": uuid(),
         "date": "2020-01-16",
         "name": "Pokemon Teams Template",
-        "category": "HTML Template",
+        "category": {
+            "name": "HTML Template",
+            "type": "HTML"
+        },
         "image": "pokemon-teams-template.png",
         "link": "https://davinaleong.github.io/proj-pokemon-teams-template/",
         "featured": false,

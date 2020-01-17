@@ -13,6 +13,7 @@ function ProjectsPage(props) {
             <LandingHalfSection page={pageInfo.current} />
             <ShowcaseSection
                 projects={props.projects}
+                getCategory={props.getCategory}
                 renderAsset={props.renderAsset}
                 gotoProjectItem={props.gotoProjectItem} />
         </div>

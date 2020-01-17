@@ -188,6 +188,14 @@ section.landing-half div.landing-lower {
   background-color: #ffeb3b;
 }
 
+span.badge {
+  display: inline-block;
+  background-color: #000;
+  font-size: 1.25rem;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
 blockquote {
   border-radius: 1rem;
 }
@@ -347,12 +355,10 @@ a.text-orange:hover {
 
 /* Text Mutations */
 strong, b, .text-bold {
-  color: #FBC02D;
   font-weight: bold;
 }
 
 em, .text-italic {
-  color: #FBC02D;
   font-style: italic;
 }
 
@@ -361,7 +367,6 @@ small, .text-small {
 }
 
 code, .text-monospace {
-  color: #FBC02D;
   font-family: Source Code Pro, Courier New, monospace;
 }
 
@@ -586,7 +591,7 @@ form table tbody tr td textarea {
   margin-left: 0.5rem;
 }
 
-.p-2, div.tech-stack {
+.p-2, span.badge, div.tech-stack, div.card div.content, div.card div.icon {
   padding: 0.5rem;
 }
 
@@ -1057,10 +1062,14 @@ div.card {
   background-color: #424242;
   -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
           box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+  position: relative;
 }
 
-div.card div.content {
-  padding: 0.5rem;
+div.card div.icon {
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 nav.social {

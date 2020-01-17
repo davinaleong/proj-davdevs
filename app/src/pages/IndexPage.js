@@ -20,6 +20,7 @@ function IndexPage(props) {
                 projects={props.projects}
                 featured={true}
                 limit={4}
+                getCategory={props.getCategory}
                 renderAsset={props.renderAsset}
                 gotoProjectItem={props.gotoProjectItem} />
         </div>

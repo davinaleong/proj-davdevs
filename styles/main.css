@@ -187,6 +187,14 @@ section.landing-half div.landing-lower {
   background-color: #ffeb3b;
 }
 
+span.badge {
+  display: inline-block;
+  background-color: #424242;
+  font-size: 1.25rem;
+  -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+          box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+}
+
 blockquote {
   border-radius: 1rem;
 }
@@ -581,7 +589,7 @@ form table tbody tr td textarea {
   margin-left: 0.5rem;
 }
 
-.p-2, div.tech-stack, div.card div.content, div.card div.icon {
+.p-2, span.badge, div.tech-stack, div.card div.content, div.card div.icon {
   padding: 0.5rem;
 }
 
