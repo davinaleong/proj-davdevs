@@ -12,8 +12,17 @@ div.cards {
 div.card {
     background-color: color('gray', '800');
     box-shadow: $box-shadow;
+    position: relative;
 }
 
 div.card div.content {
-    padding: spacer('2');
+    @extend .p-2;
+}
+
+div.card div.icon {
+    @extend .p-2;
+    background-color: color('gray', '800');
+    position: absolute;
+    top: 0;
+    right: 0;
 }
