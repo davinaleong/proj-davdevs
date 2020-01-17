@@ -121,29 +121,6 @@ const projects = [
     },
     {
         "uuid": uuid(),
-        "date": "2020-01-15",
-        "name": "Color Palettes",
-        "category": {
-            "name": "Static Website",
-            "type": "HTML"
-        },
-        "image": "color-palettes.png",
-        "link": "https://davinaleong.github.io/proj-color-palette/",
-        "featured": false,
-        "overview": "A simple website to store Color Palettes I use frequently.",
-        "technologies": [
-            {
-                "name": "Frontend",
-                "items": ["HTML", "CSS", "jQuery", "JSON"]
-            }, {
-                "name": "Highlights",
-                "items": ["CSS Grid", "Flexbox"]
-            }
-        ],
-        "about": "This project is built in `HTML` and `CSS`. `jQuery` is used to render the palettes from a `JSON` file.\n\n\nThe palatte data and color values are stored in a `JSON` file for easy-editing.\n\n\nI decided upon `jQuery` as the main technology to render the color swatches as I wanted to keep the project simple clean.\n\n\nFeel free to use Color Palettes for your own reference. I designed the project such that it's easy to copy the swatch's hex value."
-    },
-    {
-        "uuid": uuid(),
         "date": "2020-01-16",
         "name": "Pokemon Teams Template",
         "category": {
