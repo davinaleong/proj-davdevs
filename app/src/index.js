@@ -9,6 +9,7 @@ import site from './data/site';
 import pages from './data/pages';
 import items from './data/items';
 import projects from './data/projects';
+import categories from './data/categories';
 import jokes from './data/jokes';
 
 const arrayTypes = {
@@ -23,6 +24,7 @@ ReactDOM.render(
         pages={pages}
         items={items}
         projects={projects}
+        categories={categories}
         jokes={jokes}
         arrayTypes={arrayTypes} />,
     document.getElementById('root'));
