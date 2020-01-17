@@ -12,10 +12,10 @@ function Modal(props) {
                 </button>
             </div>
             <div className="content">
-                <h1 className="h4">A lame joke... <i className="fal fa-grin-beam"></i></h1>
+                <h1 className="h4">A lame joke&hellip; <i className="fal fa-grin-beam"></i></h1>
                 <div>{props.breakLines(joke)}</div>
                 <p className="mt-5">
-                    <small>A list of original lame jokes.<br/>Keep launching the modal to see more lame jokes.</small>
+                    <small>A list of original lame jokes.<br/>Keep launching this modal to see more lame jokes. <i className="fas fa-rocket"></i></small>
                 </p>
             </div>
         </div>

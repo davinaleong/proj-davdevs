@@ -5,7 +5,7 @@ function LandingSection(props) {
         <section className="landing">
             <div className="landing-upper">
                 <div className="landing-content text-center">
-                    <img className="logo mb-3" src={props.renderAsset('icon', 'logo-black.svg')} />
+                    <img className="logo mb-3" src={props.renderAsset('icon', 'logo-black.svg')} alt="logo" />
                     <h1 className="mb-2">{props.site.title}</h1>
                     <p className="text-black mb-2">{props.site.occupation}</p>
                     <p className="text-black text-italic"><small>{props.site.tagline}</small></p>
@@ -13,11 +13,10 @@ function LandingSection(props) {
             </div>
             <div className="landing-middle">
                 <div className="landing-cell-left">
-                    <img src={props.renderAsset('site', 'index-01.svg')}           width="160px"/>
+                    <img src={props.renderAsset('site', 'index-01.svg')} alt="index-01" width="160px"/>
                 </div>
                 <div className="landing-cell-right">
-                    <img src={props.renderAsset('site', 'index-02.svg')}
-                        width="160px"/>
+                    <img src={props.renderAsset('site', 'index-02.svg')} alt="index-02" width="160px"/>
                 </div>
             </div>
             <div className="landing-lower"></div>
