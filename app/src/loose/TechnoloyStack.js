@@ -2,7 +2,7 @@ import React from 'react';
 
 function TechStack(props) {
     const stacks = [];
-    props.techStack.forEach((category, index) => {
+    props.technologies.forEach((category, index) => {
         stacks.push(
             <div key={'t'+index} className="mb-2">
                 <h4 className="h6">{category.name}</h4>

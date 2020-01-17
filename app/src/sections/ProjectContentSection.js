@@ -2,7 +2,7 @@ import React from 'react';
 import Markdown from 'react-markdown';
 
 import Blockquote from './../loose/Blockquote';
-import TechStack from './../loose/TechStack';
+import TechnologyStack from './../loose/TechnoloyStack';
 import ToProjectDemoButton from './../buttons/ToProjectDemoButton';
 
 function ProjectContentSection(props) {
@@ -17,13 +17,13 @@ function ProjectContentSection(props) {
 
             <Blockquote text={props.project.overview} breakLines={props.breakLines} />
 
-            <TechStack techStack={props.project.techStack} renderItems={props.renderItems} />
+            <TechnologyStack technologies={props.project.technologies} renderItems={props.renderItems} />
 
             <div className="mb-3"><img src={props.renderAsset('image', props.project.image)} alt={props.project.name} /></div>
 
             {props.project.link ? <ToProjectDemoButton project={props.project} /> : null}
             
-            <Markdown source={props.project.writeUp} />
+            <Markdown source={props.project.about} />
         </section>
     );
 }
