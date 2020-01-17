@@ -29,6 +29,10 @@ class App extends React.Component {
     };
   }
 
+  getCategory = (category) => {
+    return this.props.categories.filter(category => category.name === category);
+  }
+
   showModal = (show) => {
     this.setState({
       modal: show
