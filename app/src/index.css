@@ -272,6 +272,7 @@ div.modal {
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
+  z-index: 2;
   width: 96vw;
   height: 98vh;
   padding: 1rem;
