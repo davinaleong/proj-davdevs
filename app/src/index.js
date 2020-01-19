@@ -6,7 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 import states from './data/states';
 import site from './data/site';
-import pages from './data/pages.old';
+import pagesOld from './data/pages.old';
+import pages from './data/pages';
 import items from './data/items';
 import projects from './data/projects';
 import categories from './data/categories';
@@ -21,7 +22,8 @@ ReactDOM.render(
     <App
         states={states}
         site={site}
-        pages={pages}
+        pages={pagesOld}
+        pagesNew={pages}
         items={items}
         projects={projects}
         categories={categories}

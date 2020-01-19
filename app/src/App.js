@@ -72,7 +72,7 @@ class App extends React.Component {
   }
 
   getPageInfo = (state) => {
-    return this.props.pages[state];
+    return this.props.pagesNew.filter(page => page.state === state)[0];
   }
 
   renderPage = (state) => {
@@ -182,7 +182,7 @@ class App extends React.Component {
       <div className="App">
         <main>
           <Header
-            pages={this.props.pages}
+            pages={this.props.pagesNew}
             states={this.props.states}
             items={this.props.items}
             gotoPage={this.gotoPage}

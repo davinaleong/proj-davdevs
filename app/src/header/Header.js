@@ -1,17 +1,18 @@
 import React from 'react';
 
-import NavItem from './NavItem';
+import NavbarItem from './NavbarItem';
 
 function Header(props) {
     const items = [];
-    props.items.forEach((item, index) => {
-        return items.push(
-            <NavItem
-                key={'n'+index}
-                item={item}
-                states={props.states}
-                gotoPage={props.gotoPage} />
-        );
+    props.pages.forEach((page, index) => {
+        if (page.navbar) {
+            return items.push(
+                <NavbarItem
+                    key={'n'+index}
+                    page={page}
+                    gotoPage={props.gotoPage} />
+            );
+        }
     });
 
     return (

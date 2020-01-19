@@ -3,7 +3,7 @@ import states from './states';
 const pages = [
     {
         "state": states.INDEX,
-        "name": "D/D",
+        "name": "Davina devs",
         "icon": "D/D",
         "navbar": true
     }, {
