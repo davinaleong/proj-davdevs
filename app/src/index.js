@@ -6,9 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import states from './data/states';
 import site from './data/site';
-import pagesOld from './data/pages.old';
 import pages from './data/pages';
-import items from './data/items';
 import projects from './data/projects';
 import categories from './data/categories';
 import jokes from './data/jokes';
@@ -22,9 +20,7 @@ ReactDOM.render(
     <App
         states={states}
         site={site}
-        pages={pagesOld}
-        pagesNew={pages}
-        items={items}
+        pages={pages}
         projects={projects}
         categories={categories}
         jokes={jokes}
