@@ -24,7 +24,12 @@ function ContactFormSection(props) {
                         </tr>
                         <tr>
                             <td>
-                                <SelectField name="type" placeholder="Subject *" required={true} group={props.site.subjects.group} options={props.site.subjects.options} />
+                                <SelectField
+                                    name="type"
+                                    placeholder="Subject *"
+                                    required={true}
+                                    group={props.site.subjects.group}
+                                    options={props.site.subjects.options} />
                             </td>
                         </tr>
                         <tr>
@@ -34,8 +39,12 @@ function ContactFormSection(props) {
                         </tr>
                     </tbody>
                     <tfoot>
-                        <tr class="text-right">
-                            <td><button className="bg-orange" type="submit"><i className="fal fa-paper-plane"></i> Send</button></td>
+                        <tr className="text-right">
+                            <td>
+                                <button className="bg-orange" type="submit">
+                                    <i className="fal fa-paper-plane"></i> Send
+                                </button>
+                            </td>
                         </tr>
                     </tfoot>
                 </table>
