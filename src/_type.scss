@@ -28,10 +28,12 @@ a:hover {
 
 /* Text Mutations */
 strong, b, .text-bold {
+    color: color('yellow', 'base');
     font-weight: bold;
 }
 
 em, .text-italic {
+    color: color('yellow', 'base');
     font-style: italic;
 }
 
@@ -39,7 +41,12 @@ small, .text-small {
     font-size: 80%;
 }
 
-code, .text-monospace {
+code, .text-code {
+    color: color('yellow', 'base');
+    font-family: family('monospace');
+}
+
+.text-monospace {
     font-family: family('monospace');
 }
 
