@@ -140,7 +140,7 @@ class App extends React.Component {
     return this.props.site.assets[type] + filename;
   }
 
-  renderItems = (items, separator, arrayType) => {
+  renderItems = (items, separator, arrayType, keyPrefix) => {
     let joined = '';
     switch(arrayType) {
       case this.props.arrayTypes['1d']:
@@ -159,7 +159,7 @@ class App extends React.Component {
           });
 
           joined.push(
-            <div>{joinedSnippet}</div>
+            <p key={keyPrefix+i}>{joinedSnippet}</p>
           );
         });
         break;
