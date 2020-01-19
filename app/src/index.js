@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import states from './data/states';
 import site from './data/site';
-import pages from './data/pages';
+import pages from './data/pages.old';
 import items from './data/items';
 import projects from './data/projects';
 import categories from './data/categories';
