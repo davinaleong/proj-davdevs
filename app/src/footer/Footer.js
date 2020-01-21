@@ -9,15 +9,15 @@ function Footer(props) {
         items.push(
             <FooterItem key={'f'+index} item={item} />
         );
-    })
+    });
 
     return (
         <footer>
             <ul>
                 <li className="footer-cell-email">
-                    <a href={'mailto:' + props.site.personal.email}>
+                    <button className="link link-orange" type="button" onClick={() => {props.gotoPage(props.states.CONTACT)}}>
                         <i className="fas fa-envelope mr-2"></i> {props.site.personal.email}
-                    </a>
+                    </button>
                 </li>
                 {items}
             </ul>

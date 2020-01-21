@@ -193,7 +193,10 @@ class App extends React.Component {
           {backButton}
         </main>
 
-        <Footer site={this.props.site} />
+        <Footer
+          states={this.props.states}
+          site={this.props.site}
+          gotoPage={this.gotoPage} />
 
         <Modal
           modal={this.state.modal}
