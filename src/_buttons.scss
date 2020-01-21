@@ -1,6 +1,7 @@
 button {
     display: inline-block;
-    padding: spacer('2');
+    @extend .p-2;
+    @extend .text-left;
     color: color('white', 'base');
     background-color: color('gray', '900');
     box-shadow: $box-shadow;

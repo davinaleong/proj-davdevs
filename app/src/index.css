@@ -392,7 +392,7 @@ code, .text-code {
 }
 
 /* Text Alignment */
-.text-left {
+.text-left, button {
   text-align: left;
 }
 
@@ -600,7 +600,7 @@ form table tbody tr td textarea {
   margin-left: 0.5rem;
 }
 
-.p-2, span.badge, div.tech-stack, div.card div.content, div.card div.icon {
+.p-2, span.badge, div.tech-stack, button, div.card div.content, div.card div.icon {
   padding: 0.5rem;
 }
 
@@ -932,7 +932,6 @@ form table tbody tr td textarea {
 
 button {
   display: inline-block;
-  padding: 0.5rem;
   color: #fff;
   background-color: #212121;
   -webkit-box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
