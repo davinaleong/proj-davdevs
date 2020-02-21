@@ -20,17 +20,17 @@ const site = {
         "design": {
             "summarised": ["UX", "Frontend"],
             "full": [
-                ['Illustrator', 'Photoshop', 'XD'],
-                ['Frontend', 'CSS', 'SASS']
+                ["Illustrator", "Photoshop", "XD"],
+                ["Frontend", "CSS", "SASS"]
             ]
         },
         "develop": {
             "summarised": ["PHP", "JavaScript", "Backend"],
             "full": [
-                ['Backend', 'PHP', 'CraftCMS', 'Laravel'],
-                ['JavaScript', 'ReactJS', 'jQuery'],
-                ['NodeJS', 'Express', 'Jest', 'GraphQL'],
-                ['MySQL']
+                ["Backend", "PHP", "CraftCMS", "Laravel"],
+                ["JavaScript", "ReactJS", "jQuery"],
+                ["NodeJS", "Express", "Jest", "GraphQL"],
+                ["MySQL"]
             ]
         }
     },
