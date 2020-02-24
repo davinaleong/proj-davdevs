@@ -25,10 +25,10 @@ const pages = [
         "page": states.PROJECT_ITEM,
         "navbar": false
     }, {
-        "state": states.SKILLS,
-        "name": "Skills",
-        "icon": "fal fa-code",
-        "page": states.SKILLS,
+        "state": states.ABOUT,
+        "name": "About",
+        "icon": "fal fa-question",
+        "page": states.ABOUT,
         "navbar": true
     }, {
         "state": states.CONTACT,

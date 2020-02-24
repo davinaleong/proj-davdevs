@@ -1,7 +1,8 @@
 import React from 'react';
 
-import LandingHalfSection from './../sections/LandingHalfSection';
-import SkillsSection from './../sections/SkillsSection';
+import LandingHalfSection from '../sections/LandingHalfSection';
+import SkillsSection from '../sections/SkillsSection';
+import AboutSection from '../sections/AboutSection';
 
 function SkillsPage(props) {
     const pageInfo = {
@@ -11,6 +12,7 @@ function SkillsPage(props) {
     return (
         <div>
             <LandingHalfSection page={pageInfo.current} />
+            <AboutSection />
             <SkillsSection
                 site={props.site}
                 renderItems={props.renderItems} />

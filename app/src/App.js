@@ -5,7 +5,7 @@ import Header from './header/Header';
 import IndexPage from './pages/IndexPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectItemPage from './pages/ProjectItemPage';
-import SkillsPage from './pages/SkillsPage';
+import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Footer from './footer/Footer';
@@ -21,8 +21,8 @@ class App extends React.Component {
 
     this.state = {
       page: {
-        current: this.props.states.INDEX,
-        previous: this.props.states.INDEX
+        current: this.props.states.ABOUT ,
+        previous: this.props.states.ABOUT 
       },
       project: null,
       modal: false
@@ -110,8 +110,8 @@ class App extends React.Component {
           renderItems={this.renderItems}
           getPageInfo={this.getPageInfo} />;
 
-      case this.props.states.SKILLS:
-        return <SkillsPage
+      case this.props.states.ABOUT:
+        return <AboutPage
           page={this.state.page}
           site={this.props.site}
           renderItems={this.renderItems}
