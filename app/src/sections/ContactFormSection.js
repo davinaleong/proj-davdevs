@@ -7,7 +7,7 @@ import TextareaField from './../fields/TextareaField';
 function ContactFormSection(props) {
     return (
         <section className="contact text-center mb-3">
-            <h2 className="hidden">Lord Christ Jesus, can you shoo away all those head-hunters, please?!</h2>
+            <h2 className="hidden">Lord Christ Jesus</h2>
 
             <form method="post" action="https://formspree.io/davina.leong@outlook.com">
                 <table>
