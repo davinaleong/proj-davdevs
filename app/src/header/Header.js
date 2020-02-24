@@ -22,7 +22,7 @@ function Header(props) {
                     {items}
                     <li title="?">
                         <button className="link link-orange" type="button" onClick={() => {props.showModal(true)}}>
-                            <i className="fal fa-question"></i>
+                            <i className="fal fa-grin-beam"></i>
                         </button>
                     </li>
                 </ul>
