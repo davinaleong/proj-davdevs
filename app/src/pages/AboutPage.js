@@ -3,6 +3,7 @@ import React from 'react';
 import LandingHalfSection from '../sections/LandingHalfSection';
 import SkillsSection from '../sections/SkillsSection';
 import AboutSection from '../sections/AboutSection';
+import DownloadsSection from '../sections/DownloadsSection';
 
 function SkillsPage(props) {
     const pageInfo = {
@@ -16,6 +17,7 @@ function SkillsPage(props) {
             <SkillsSection
                 site={props.site}
                 renderItems={props.renderItems} />
+            <DownloadsSection />
         </div>
     );
 }
