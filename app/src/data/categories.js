@@ -15,6 +15,10 @@ const categories = [
         "name": "Angular",
         "icon": "fab fa-angular",
         "color": "#DD0031"
+    }, {
+        "name": "Laravel",
+        "icon": "fab fa-laravel",
+        "color": "#FF2C1F"
     }
 ];
 

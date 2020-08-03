@@ -3,6 +3,35 @@ import uuid from 'uuid/v4';
 const projects = [
     {
         "uuid": uuid(),
+        "date": "2020-08-02",
+        "name": "Todo",
+        "category": {
+            "name": "Laravel",
+            "type": "Laravel"
+        },
+        "image": "todo-laravel.png",
+        "link": "https://davinaleong.github.io/proj-color-palette/",
+        "featured": true,
+        "overview": "A simple Laravel Todo app.",
+        "technologies": [
+            {
+                "name": "Frontend",
+                "items": ["Bootstrap", "SB Admin 2"]
+            }, {
+                "name": "Backend",
+                "items": ["Laravel", "MySQL"]
+            }, {
+                "name": "Deployment",
+                "items": ["Heroku"]
+            }, {
+                "name": "Highlights",
+                "items": ["Heroku", "Laravel"]
+            }
+        ],
+        "about": "This is a simple [Laravel](https://laravel.com/) todo app. It's deployed on [Heroku](https://www.heroku.com/). The main reason for me building this app is to try my hand at deployment. I wanted to learn how to deploy a LAMP stack application for as low-cost as possible. Heroku was my solution as it's free."
+    },
+    {
+        "uuid": uuid(),
         "date": "2020-01-15",
         "name": "Color Palettes",
         "category": {
@@ -60,7 +89,7 @@ const projects = [
         },
         "image": "b4-admin-template.png",
         "link": "https://davinaleong.github.io/proj-b4-admin-template/",
-        "featured": true,
+        "featured": false,
         "overview": "A simple Bootstrap 4 template ready to use out-of-the-box!",
         "technologies": [
             {
