@@ -6,7 +6,7 @@ function Card(props) {
     return (
         <div className="card">
             <div className="icon" title={category.name}><i className={category.icon + ' fa-2x'} style={{color: category.color}}></i></div>
-            <img src={props.renderAsset('image', props.project.image)} alt={props.project.name} />
+            <img src={props.renderAsset('image', props.project.image)} alt={props.project.name} className="clickable" onClick={() => {props.gotoProjectItem(props.project.uuid)}} />
             <div className="content">
                 <h3 className="h5 text-left mb-1">
                     <button className="link link-orange" type="button" onClick={() => {props.gotoProjectItem(props.project.uuid)}}>

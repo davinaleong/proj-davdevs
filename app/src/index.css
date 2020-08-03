@@ -31,6 +31,10 @@ img.shadow {
   display: none;
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+
 /* Header */
 header {
   position: -webkit-sticky;
