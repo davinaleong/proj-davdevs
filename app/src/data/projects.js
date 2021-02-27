@@ -30,8 +30,8 @@ const projects = [
         "date": "2021-02-27",
         "name": "Customer Dashboard Template",
         "category": {
-            "name": "Laravel",
-            "type": "Laravel"
+            "name": "HTML",
+            "type": "HTML"
         },
         "image": "customer-dashboard.png",
         "link": "https://customer-dashboard-template.s3-ap-southeast-1.amazonaws.com/dashboard.html",
