@@ -3,6 +3,54 @@ import uuid from 'uuid/v4';
 const projects = [
     {
         "uuid": uuid(),
+        "date": "2021-02-27",
+        "name": "Bible API",
+        "category": {
+            "name": "Laravel",
+            "type": "Laravel"
+        },
+        "image": "bible-api.png",
+        "link": "http://45.33.120.254/",
+        "featured": true,
+        "overview": "An API for developers",
+        "technologies": [
+            {
+                "name": "Frontend / Backend",
+                "items": ["Laravel"]
+            },
+            {
+                "name": "Deployment",
+                "items": ["Linode", "Laravel Forge"]
+            }
+        ],
+        "about": "I wanted to build an API project to sharpen my skills. I also wanted to learn how to deploy an API. This project has 2 parts: the CMS and API. The CMS for users to update the database, and the API to request the data stored in the database. I decided to use the Bible as a theme for this project as I have an understanding of the Bible structure.\n\nThis is an ongoing project. I have yet to setup the domain and HTTPS. This project is built in Laravel and is deployed on [Linode](https://www.linode.com/) using [Laravel Forge](https://forge.laravel.com/)."
+    },
+    {
+        "uuid": uuid(),
+        "date": "2021-02-27",
+        "name": "Customer Dashboard Template",
+        "category": {
+            "name": "Laravel",
+            "type": "Laravel"
+        },
+        "image": "customer-dashboard.png",
+        "link": "https://customer-dashboard-template.s3-ap-southeast-1.amazonaws.com/dashboard.html",
+        "featured": true,
+        "overview": "A dashboard template for company's clients.",
+        "technologies": [
+            {
+                "name": "Frontend",
+                "items": ["Bootstrap", "Admin LTE"]
+            },
+            {
+                "name": "Deployment",
+                "items": ["AWS S3"]
+            }
+        ],
+        "about": "I was tasked to develop a dashboard for clients at [LIV3LY](https://liv3ly.com/).\n\nI decided to do an HTML template first before building the actual dashboard so that stakeholders can have an idea on how the dashboard will look like. This template is built on the [Admin LTE template](https://adminlte.io/themes/AdminLTE/index2.html).\n\nThe actual dashboard will be developed in [Laravel 8](https://laravel.com/).\n\nThis template is deployed on the company's AWS S3 server."
+    },
+    {
+        "uuid": uuid(),
         "date": "2020-08-02",
         "name": "Todo",
         "category": {
@@ -11,7 +59,7 @@ const projects = [
         },
         "image": "todo-laravel.png",
         "link": "https://davinaleong.github.io/proj-color-palette/",
-        "featured": true,
+        "featured": false,
         "overview": "A simple Laravel Todo app.",
         "technologies": [
             {
@@ -112,7 +160,7 @@ const projects = [
         },
         "image": "comphanny-template.png",
         "link": "https://davinaleong.github.io/proj-comphanny-template/",
-        "featured": true,
+        "featured": false,
         "overview": "A simple Bootstrap 4 template ready to use out-of-the-box!",
         "technologies": [
             {
