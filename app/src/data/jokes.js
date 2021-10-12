@@ -1,5 +1,5 @@
 const jokes = [
-    "",
+    "A: dog + clothes iron = ?\r\nHint: a Singaporen chinese snack.\r\n\r\nQ: Bark Kwa",
     "A: What do you call a reptilian AI?\r\n\r\nQ: An algogator.",
     "A friend texted me that she attended her friend's wedding.\r\n\r\nBut it happened on a Sat; so was it a Wed-ding or a Sat-ding?\r\nIf she's not seated at the moment, then she should sit-ding while waiting for the couple to arrive?\r\n\r\nLater, that evening she had to stand to give her to-be married friend a stand-ding ovation.",
     "A foreigner just finished his meal at a restaurant in Singapore.\r\n\r\nAs the waiter was about to hand him the bill, he mentions, \"We only accept cash or nets.\"\r\n\r\nThe foreigner replied, \"Which kind? The butterfly one or the internet one?\"",
